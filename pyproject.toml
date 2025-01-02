@@ -18,8 +18,15 @@ cohere = "^5.13.4"
 onnx = "^1.17.0"
 onnxruntime = "^1.20.1"
 ray = {extras = ["data", "train", "tune"], version = "^2.40.0"}
+horovod = "^0.28.1"
+seaborn = "^0.13.2"
+papermill = "^2.6.0"
+python-dotenv = "^1.0.1"
 
 
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
 
 [build-system]
 requires = ["poetry-core"]
