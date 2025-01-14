@@ -22,7 +22,7 @@ horovod = "^0.28.1"
 seaborn = "^0.13.2"
 papermill = "^2.6.0"
 python-dotenv = "^1.0.1"
-weave = "^0.51.25"
+weave = "^0.51.27"
 openai = "^1.59.2"
 
 
