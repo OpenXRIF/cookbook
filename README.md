@@ -1,5 +1,5 @@
 # Cookbook
-Recipes for various robot platforms, action spaces, models, and environments. Also contains proof-of-concept experiments and notebooks which may provide direction for future BrainFlight features.
+Recipes for various robot platforms, action spaces, models, and environments. Also contains proof-of-concept experiments and notebooks which may provide direction for future XRIF features.
 
 ### Environment Setup
 
