@@ -4505,13 +4505,13 @@ files = [
 
 [[package]]
 name = "weave"
-version = "0.51.25"
+version = "0.51.29"
 description = "A toolkit for building composable interactive data driven applications."
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "weave-0.51.25-py3-none-any.whl", hash = "sha256:5fa7c6f78468fb9c3209b30cbfea3211bd1d394e16499ac3860559f9dc43b04d"},
-    {file = "weave-0.51.25.tar.gz", hash = "sha256:5acdd9508ed840fb51a586913c25188d3b8eb7661fc24bdf22b6896965278d6e"},
+    {file = "weave-0.51.29-py3-none-any.whl", hash = "sha256:5f0a2885ffd290fbd27693d4e5b1a0e21fe4971470c229d90f4e97dc6a3aaf63"},
+    {file = "weave-0.51.29.tar.gz", hash = "sha256:9892c213ee538e9fa3302f0c4c2da914f8a3f6fb2ebdf2c095a403ea4903e481"},
 ]
 
 [package.dependencies]
@@ -4528,6 +4528,7 @@ wandb = ">=0.17.1"
 
 [package.extras]
 anthropic = ["anthropic (>=0.18.0)"]
+bedrock = ["boto3", "moto[bedrock] (>=5.0.24)"]
 cerebras = ["cerebras-cloud-sdk"]
 cohere = ["cohere (>=5.9.1,<5.9.3)"]
 docs = ["lazydocs", "nbconvert", "nbformat", "playwright"]
@@ -4536,6 +4537,7 @@ google-ai-studio = ["google-generativeai (>=0.8.3)"]
 groq = ["groq (>=0.13.0)"]
 instructor = ["instructor (>=1.4.3)", "instructor (>=1.4.3,<1.7.0)"]
 langchain = ["chromadb (>=0.5.0)", "langchain-community (>=0.2.1)", "langchain-core (>=0.2.1)", "langchain-openai (>=0.1.7)", "opentelemetry-exporter-otlp", "pysqlite3"]
+langchain-nvidia-ai-endpoints = ["langchain-core (>=0.2.1)", "langchain-nvidia-ai-endpoints"]
 litellm = ["litellm (>=1.36.1)"]
 llamaindex = ["llama-index (>=0.10.35)"]
 mistral0 = ["mistralai (>=0.1.8,<1.0.0)"]
@@ -4546,7 +4548,7 @@ openai = ["openai (>=1.0.0)"]
 pandas-test = ["pandas (>=2.2.3)"]
 scorers = ["instructor (>=1.5.2)", "levenshtein (>=0.26.0)"]
 scorers-tests = ["anthropic (>=0.30.0)", "google-generativeai (>=0.8.0)", "instructor (>=1.5.2)", "levenshtein (>=0.26.0)", "mistralai (>=1.0.3)", "openai (>=1.0.0)"]
-test = ["clickhouse-connect (==0.7.0)", "fastapi (>=0.110.0)", "filelock", "flask", "httpx", "nox", "pillow", "pytest (>=8.2.0)", "pytest-asyncio (>=0.23.6)", "pytest-cov (>=5.0.0)", "pytest-recording (>=0.13.2)", "pytest-rerunfailures (>=12.0)", "pytest-rerunfailures (>=14.0)", "pytest-xdist (>=3.1.0)", "sqlparse (==0.5.0)", "uvicorn (>=0.27.0)", "vcrpy (>=6.0.1)"]
+test = ["clickhouse-connect (==0.7.0)", "fastapi (>=0.110.0)", "filelock", "flask", "httpx", "nox", "pillow", "pytest (>=8.2.0)", "pytest-asyncio (>=0.23.6)", "pytest-cov (>=5.0.0)", "pytest-recording (>=0.13.2)", "pytest-rerunfailures (>=12.0)", "pytest-rerunfailures (>=14.0)", "pytest-xdist (>=3.1.0)", "sqlparse (==0.5.0)", "uvicorn (>=0.27.0)", "vcrpy (>=7.0.0)"]
 vertexai = ["vertexai (>=1.70.0)"]
 
 [[package]]
@@ -4648,4 +4650,4 @@ propcache = ">=0.2.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "043fbbea4b0421d6a36c9a19981ca515e4da8c8fa773819a825894ef6214cd64"
+content-hash = "3f3b4a6a3d7c60ee4d436a60ac7cd50b386afdc104f49fc705513a8ef68804e6"
