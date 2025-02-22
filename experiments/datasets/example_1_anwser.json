@@ -1,0 +1,23 @@
+{
+    "actions": [
+        {
+            "action": "navigate",
+            "input": {
+                "name": "C&D - Hot Food Area",
+                "x": 2091,
+                "y": 1157,
+                "floor": 1,
+            }
+        },
+        {
+            "action": "Speak",
+            "input": "can you get me two regular beef jamacan pattys"
+                "name": "RoboHub Entrance",
+                "x": 25,
+                "y": 50,
+                "floor": 1,
+                "keywords": ["robots", "workshop", "lab"],
+            },
+        },
+    ]
+}

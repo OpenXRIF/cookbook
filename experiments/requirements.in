@@ -1,0 +1,14 @@
+numpy
+pandas
+matplotlib
+haystack-ai
+seaborn
+scikit-learn
+transformers
+torch
+torchvision
+cohere
+openai
+wandb
+dotenv
+tqdm
