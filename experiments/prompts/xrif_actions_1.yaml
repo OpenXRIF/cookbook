@@ -26,7 +26,6 @@ prompt: |
                   "x": 100,
                   "y": 100,
                   "floor": 2,
-                  "keywords": ["office", "Zach"],
               }
           },
           {
@@ -36,7 +35,6 @@ prompt: |
                   "x": 25,
                   "y": 50,
                   "floor": 1,
-                  "keywords": ["robots", "workshop", "lab"],
               },
           },
       ]
@@ -54,7 +52,6 @@ prompt: |
                   "x": 100,
                   "y": 100,
                   "floor": 2,
-                  "keywords": ["office", "Zach"],
               }
           },
           {
@@ -72,10 +69,10 @@ prompt: |
                   "x": 25,
                   "y": 75,
                   "floor": 1,
-                  "keywords": ["classroom", "workshop", "lab"],
               },
           },
       ]
   }
 
+  # Usage 
   Prompt: {{ query }}
