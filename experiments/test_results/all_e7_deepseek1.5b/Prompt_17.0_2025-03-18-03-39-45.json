@@ -27,5 +27,6 @@
     "Starting X": 0.0,
     "Starting Y": 0.0,
     "Expected Response": "['C&D - Snack Area', 'C&D - Cold Drink Area']",
-    "Expected Response Type": "Nav"
+    "Expected Response Type": "Nav",
+    "Error Message": "Expected Response Error: Expected Response Type is not correct for action object 0"
 }

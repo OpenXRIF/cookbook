@@ -1,4 +1,4 @@
-Data Set,Experiment ID,Prompt ID,Prompt,Full LLM Response,XRIF Generated,Starting X,Starting Y,Expected Response,Expected Response Type,Error Message
+Data Set,Experiment ID,Prompt ID,Prompt,Full LLM Response,XRIF Generated,Starting X,Starting Y,Expected Response,Expected Response Type,Error Message,Notes
 E7-1,3.0,18.0,"""Go North Entrance and then proceed to C&D - Main Entrance.""","<think>
 Okay, let me try to figure out how to respond to the user's prompt. The user wrote: ""Go North Entrance and then proceed to C&D - Main Entrance."" I need to parse this command step by step.
 
@@ -32,7 +32,7 @@ Therefore, I conclude that ""North Entrance"" isn't available, so I should retur
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['North Entrance', 'C&D - Main Entrance']",Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['North Entrance', 'C&D - Main Entrance']",Nav,,
 E7-1,1.0,11.0,"""It's too loud here! Let's go to the Silent Study, and then afterwards, we can check out the RoboHub.""","<think>
 Okay, let's try to figure out how to handle this prompt. The user wants me to break down their request into actions.
 
@@ -135,7 +135,7 @@ According to the guidelines, if any step in a multi-step command refers to an un
     }
   ]
 }
-```","{'actions': [{'type': 'speak', 'text': 'This waypoint does not exist.'}]}",0.0,0.0,"['Silent Study', 'RoboHub']",Nav,
+```","{'actions': [{'type': 'speak', 'text': 'This waypoint does not exist.'}]}",0.0,0.0,"['Silent Study', 'RoboHub']",Nav,,
 E7-1,7.0,48.0,"""Travel to the E5 Entrance and then find the Microwaves.""","<think>
 Alright, let's try to figure out how to respond to this prompt. The user wants me to travel to the E5 Entrance and then find the Microwaves. First, I need to break down each part of the command.
 
@@ -163,7 +163,7 @@ So, the actions would be: first navigate to E5 Entrance as it exists, then check
     }
   ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 243, 'y': 187}}, {'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 243, 'y': 187}}, {'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 E7-1,6.0,43.0,"""Take me to the E7 silent study.""","<think>
 Alright, I need to figure out how to respond to the user's prompt: ""Take me to the E7 silent study."" Let me break this down step by step.
 
@@ -181,7 +181,7 @@ I don't need to consider any other actions like navigating or waiting because th
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",1443.0,572.0,['Silent Study'],Nav,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",1443.0,572.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 E7-1,1.0,3.0,"""Travel to the E5 Entrance and then find the Microwaves.""","<think>
 Alright, let's break down this user prompt: ""Travel to the E5 Entrance and then find the Microwaves."" I need to figure out how to respond with the appropriate actions. 
 
@@ -219,7 +219,7 @@ Putting it all together, the actions will first navigate to E5 Entrance and then
         }
     ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 216.0, 'y': 172.0}}, {'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 216.0, 'y': 172.0}}, {'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 E7-1,6.0,41.0,"""Take me to the E7 silent study.""","<think>
 Okay, so I need to figure out how to respond to the user's prompt: ""Take me to the E7 silent study."" Let me break this down step by step.
 
@@ -256,7 +256,7 @@ Therefore, I can confidently navigate to that waypoint without any issues.
             }
         }
     ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Silent Study', 'x': 1286.0, 'y': 843.0}}]}",1286.0,843.0,['Silent Study'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Silent Study', 'x': 1286.0, 'y': 843.0}}]}",1286.0,843.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 E7-1,3.0,21.0,"""Let's check out Novelties store, and then head out South Entrance.""","<think>
 Okay, so I've got this prompt where the user says, ""Let's check out Novelties store, and then head out South Entrance."" Hmm, I need to figure out what actions to take based on this. 
 
@@ -363,7 +363,7 @@ The assistant responds by indicating that the first destination isn't recognized
   ""action"": ""speak"",
   ""text"": ""The destination 'Novelties store' does not exist.""
 }
-```","{'action': 'speak', 'text': ""The destination 'Novelties store' does not exist.""}",0.0,0.0,"['Novelties', 'South Entrance']",Nav,
+```","{'action': 'speak', 'text': ""The destination 'Novelties store' does not exist.""}",0.0,0.0,"['Novelties', 'South Entrance']",Nav,,
 E7-1,14.0,92.0,"""Robot, move to Assembly Room and state 'Assembly Room' upon arrival.""","<think>
 Okay, I need to figure out how to respond to the user's prompt. The prompt is: ""Robot, move to Assembly Room and state 'Assembly Room' upon arrival.""
 
@@ -398,7 +398,7 @@ The command includes an attempt to navigate to ""Assembly Room,"" which does not
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Assembly Room', ('speak', 'Assembly Room')]",Nav + Action,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Assembly Room', ('speak', 'Assembly Room')]",Nav + Action,,
 E7-1,6.0,38.0,"""Take me to the E7 silent study.""","<think>
 Okay, so I need to figure out how to respond to the user's prompt. The user wrote, ""Take me to the E7 silent study."" Let me break this down step by step.
 
@@ -472,7 +472,7 @@ Since none of the waypoints have all their tokens present in the user's input, a
 In that case, the appropriate response would be to inform the user that the destination isn't recognized.
 </think>
 
-I'm sorry, but I couldn't find a waypoint named ""E7 silent study."" Could you please provide more details or confirm the location?","I'm sorry, but I couldn't find a waypoint named ""E7 silent study."" Could you please provide more details or confirm the location?",0.0,0.0,['Silent Study'],Nav,XRIF response is Invalid
+I'm sorry, but I couldn't find a waypoint named ""E7 silent study."" Could you please provide more details or confirm the location?","I'm sorry, but I couldn't find a waypoint named ""E7 silent study."" Could you please provide more details or confirm the location?",0.0,0.0,['Silent Study'],Nav,XRIF response is Invalid,
 E7-1,7.0,49.0,"""Travel to the E5 Entrance and then find the Microwaves.""","<think>
 Okay, so I have this prompt where I need to figure out how to respond. The user says, ""Travel to the E5 Entrance and then find the Microwaves."" Let me break this down step by step.
 
@@ -508,7 +508,7 @@ Finally, I need to ensure that the output is a list of actions in order, without
     }
   ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 1234, 'y': 5678}}, {'action': 'speak', 'input': 'Where are the microwaves located?'}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 1234, 'y': 5678}}, {'action': 'speak', 'input': 'Where are the microwaves located?'}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 E7-1,10.0,70.0,"""I could really go for a shower.""","<think>
 Okay, so I've got this prompt where the user says, ""I could really go for a shower."" My job is to figure out what actions to take based on this. Let me think through how to approach this.
 
@@ -575,7 +575,7 @@ The bot cannot navigate to a location named ""shower"" as it is not listed among
   ""action"": ""speak"",
   ""value"": ""I'm sorry, but I can't find a waypoint named 'shower'.""
 }
-```","{'action': 'speak', 'value': ""I'm sorry, but I can't find a waypoint named 'shower'.""}",951.0,616.0,['Shower A'],Nav,
+```","{'action': 'speak', 'value': ""I'm sorry, but I can't find a waypoint named 'shower'.""}",951.0,616.0,['Shower A'],Nav,,
 E7-1,6.0,40.0,"""Take me to the E7 silent study.""","<think>
 Okay, so I need to figure out how to respond to the user's prompt: ""Take me to the E7 silent study."" Let's break this down step by step.
 
@@ -599,7 +599,7 @@ Since no known waypoints meet the threshold, I need to output an action where th
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",2899.0,333.0,['Silent Study'],Nav,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",2899.0,333.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 E7-1,8.0,54.0,"""Take me to the E7 silent study.""","<think>
 Alright, let's try to figure out how to handle this prompt. The user said, ""Take me to the E7 silent study."" First, I need to parse the command and identify any waypoints mentioned.
 
@@ -617,7 +617,7 @@ Looking at the provided waypoints, there's an ""E Role"" area but nothing about 
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 E7-1,4.0,27.0,"""Take me to the Elevators. Wait their for 15 seconds, and then let's find the East Enterance.""","<think>
 Okay, I need to figure out how to respond to the user's prompt: ""Take me to the Elevators. Wait there for 15 seconds, and then let's find the East Enterance."" 
 
@@ -641,7 +641,7 @@ Therefore, my response should inform the user that their request includes an inv
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': ""Invalid request: 'Elevators' is not a valid waypoint""}]}",0.0,0.0,"['Elevators', 'East Entrance']",Nav,
+```","{'actions': [{'action': 'speak', 'input': ""Invalid request: 'Elevators' is not a valid waypoint""}]}",0.0,0.0,"['Elevators', 'East Entrance']",Nav,,
 E7-1,5.0,29.0,"""I wonder how many entrances there are to E7. Go to the C&D""","<think>
 Okay, so I'm trying to figure out how to respond to this user prompt: ""I wonder how many entrances there are to E7. Go to the C&D."" Hmm, let's break this down step by step.
 
@@ -675,7 +675,7 @@ Putting it all together, the actions would be: first, speak about E7 not being f
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}, {'action': 'navigate', 'input': {'name': 'C&D - Coffee Area', 'x': 100, 'y': 100}}]}",0.0,0.0,['C&D - Main Entrance'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}, {'action': 'navigate', 'input': {'name': 'C&D - Coffee Area', 'x': 100, 'y': 100}}]}",0.0,0.0,['C&D - Main Entrance'],Nav,,
 E7-1,2.0,17.0,"""I'm fealing peckish. Can we swing by the C&D - Snack Area and then grab a drink at the C&D - Cold Drink Aeria?""","<think>
 Okay, let's try to figure out how to respond to this user prompt. The user wrote, ""I'm feeling peckish. Can we swing by the C&D - Snack Area and then grab a drink at the C&D - Cold Drink Area?"" 
 
@@ -773,7 +773,7 @@ Step-by-step explanation:
 
 Response:
 
-""I'm sorry, but neither 'C&D - Snack Area' nor 'C&D - Cold Drink Area' exist in our records. Would you like to visit the C&D - Coffee Area instead?""","The system is unable to locate either ""C&D - Snack Area"" or ""C&D - Cold Drink Area."" Step-by-step explanation:1. The user requested two specific waypoints: ""C&D - Snack Area"" and ""C&D - Cold Drink Area.""2. The available waypoint is ""C&D - Coffee Area.""3. Neither of the requested areas matches any known waypoint.4. Therefore, the system responds that both requested waypoints do not exist.Response:""I'm sorry, but neither 'C&D - Snack Area' nor 'C&D - Cold Drink Area' exist in our records. Would you like to visit the C&D - Coffee Area instead?""",0.0,0.0,"['C&D - Snack Area', 'C&D - Cold Drink Area']",Nav,XRIF response is Invalid
+""I'm sorry, but neither 'C&D - Snack Area' nor 'C&D - Cold Drink Area' exist in our records. Would you like to visit the C&D - Coffee Area instead?""","The system is unable to locate either ""C&D - Snack Area"" or ""C&D - Cold Drink Area."" Step-by-step explanation:1. The user requested two specific waypoints: ""C&D - Snack Area"" and ""C&D - Cold Drink Area.""2. The available waypoint is ""C&D - Coffee Area.""3. Neither of the requested areas matches any known waypoint.4. Therefore, the system responds that both requested waypoints do not exist.Response:""I'm sorry, but neither 'C&D - Snack Area' nor 'C&D - Cold Drink Area' exist in our records. Would you like to visit the C&D - Coffee Area instead?""",0.0,0.0,"['C&D - Snack Area', 'C&D - Cold Drink Area']",Nav,XRIF response is Invalid,
 E7-1,8.0,55.0,"""Take me to the E7 silent study.""","<think>
 Okay, so I need to figure out how to respond to the user's prompt. The user wrote, ""Take me to the E7 silent study."" Let me break this down step by step.
 
@@ -801,7 +801,7 @@ The agent needs to inform the user that the specified waypoint does not exist.
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 E7-1,1.0,9.0,"""We're at the Assembly Room now. Let's head back to the Ideas Clinic.""","<think>
 Okay, let's see what the user is asking for here. The prompt says, ""We're at the Assembly Room now. Let's head back to the Ideas Clinic."" Hmm, so I need to figure out how to respond.
 
@@ -821,7 +821,7 @@ So, since both Assembly Room and Ideas Clinic are unknown, my response should be
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Assembly Room', 'Ideas Clinic']",Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Assembly Room', 'Ideas Clinic']",Nav,,
 E7-1,12.0,81.0,"""Go to the c&d and ask for a coffee then go to the design team bay""","<think>
 Alright, so I've got this user prompt: ""Go to the c&d and ask for a coffee then go to the design team bay"". Let me try to figure out how to process this step by step.
 
@@ -876,7 +876,7 @@ I don't see any invalid or ambiguous commands here, and all actions are supporte
     }
   ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Coffee Area', 'x': 100, 'y': 100}}, {'action': 'speak', 'input': 'Can I have a coffee please?'}, {'action': 'navigate', 'input': {'name': 'Design Team Bay', 'x': 25, 'y': 75}}]}",0.0,0.0,[error waypoint does not exist],,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Coffee Area', 'x': 100, 'y': 100}}, {'action': 'speak', 'input': 'Can I have a coffee please?'}, {'action': 'navigate', 'input': {'name': 'Design Team Bay', 'x': 25, 'y': 75}}]}",0.0,0.0,[error waypoint does not exist],,,
 E7-1,15.0,95.0,"""Robot, navigate to [[C&D - Hot Food Area]], announce 'C&D Hot Food Area' clearly, and wait until further instructions.""","<think>
 Alright, so I need to figure out how to handle the user's prompt: ""Robot, navigate to [[C&D - Hot Food Area]], announce 'C&D Hot Food Area' clearly, and wait until further instructions."" 
 
@@ -906,7 +906,7 @@ The user's command includes navigating to a waypoint that isn't listed, so the r
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['C&D - Hot Food Area', ('speak', 'C&D Hot Food Area'), ('wait', 'until further instructions')]",Nav + Action,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['C&D - Hot Food Area', ('speak', 'C&D Hot Food Area'), ('wait', 'until further instructions')]",Nav + Action,,
 E7-1,1.0,5.0,"""Move to the RoboHub and then proceed to the Silent Study.""","<think>
 Okay, so I need to figure out how to respond to the user's prompt. The user wrote, ""Move to the RoboHub and then proceed to the Silent Study."" Let me break this down step by step.
 
@@ -928,7 +928,7 @@ So, my response should be a speak action informing the user that ""RoboHub"" doe
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['RoboHub', 'Silent Study']",Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['RoboHub', 'Silent Study']",Nav,,
 E7-1,4.0,24.0,"""Move to the RoboHub and then proceed to the Silent Study's.""","<think>
 Okay, I need to figure out how to respond to this user prompt: ""Move to the RoboHub and then proceed to the Silent Study's."" Let me break it down step by step.
 
@@ -950,7 +950,7 @@ I need to make sure my response follows the structure specified. The actions arr
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': ""Invalid request: 'RoboHub' is not a valid waypoint""}]}",0.0,0.0,"['RoboHub', 'Silent Study']",Nav,
+```","{'actions': [{'action': 'speak', 'input': ""Invalid request: 'RoboHub' is not a valid waypoint""}]}",0.0,0.0,"['RoboHub', 'Silent Study']",Nav,,
 E7-1,14.0,93.0,"""Robot, proceed to Elevators and say 'Elevators' to assist with navigation.""","<think>
 Okay, so the user has given me this query where I'm supposed to act as an assistant for a robot navigating through waypoints. The prompt says, ""Robot, proceed to Elevators and say 'Elevators' to assist with navigation."" 
 
@@ -974,7 +974,7 @@ Therefore, according to the rules, if no waypoint matches, I should return an ac
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Elevators', ('speak', 'Elevators')]",Nav + Action,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Elevators', ('speak', 'Elevators')]",Nav + Action,,
 E7-1,3.0,19.0,"""Navigate to Ideas Clinic and then go Assembly Room.""","<think>
 Okay, so I need to figure out how to respond to the user's prompt: ""Navigate to Ideas Clinic and then go Assembly Room."" First, let me break down what needs to be done.
 
@@ -1060,7 +1060,7 @@ So the JSON would include two actions: a navigate action and then a speak action
     ""message"": ""This waypoint does not exist.""
   }
 ]
-```","{    ""action"": ""navigate"",    ""coordinates"": [25, 75]  },  {    ""action"": ""speak"",    ""message"": ""This waypoint does not exist.""  }",0.0,0.0,"['Ideas Clinic', 'Assembly Room']",Nav,XRIF response is Invalid
+```","{    ""action"": ""navigate"",    ""coordinates"": [25, 75]  },  {    ""action"": ""speak"",    ""message"": ""This waypoint does not exist.""  }",0.0,0.0,"['Ideas Clinic', 'Assembly Room']",Nav,XRIF response is Invalid,
 E7-1,4.0,23.0,"""Navigate to the Ideas Clinic and then go to the Assemble Room.""","<think>
 Okay, so I have this prompt where the user says, ""Navigate to the Ideas Clinic and then go to the Assemble Room."" Hmm, let me figure out how to handle this. 
 
@@ -1086,7 +1086,7 @@ I should structure the JSON response with an ""actions"" array containing a sing
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': ""Invalid request: 'Ideas Clinic' and 'Assemble Room' are not valid waypoints""}]}",0.0,0.0,"['Ideas Clinic', 'Assembly Room']",Nav,
+```","{'actions': [{'action': 'speak', 'input': ""Invalid request: 'Ideas Clinic' and 'Assemble Room' are not valid waypoints""}]}",0.0,0.0,"['Ideas Clinic', 'Assembly Room']",Nav,,
 E7-1,11.0,76.0,"""Robot, begin security patrol at E5 Entrance and ensure no unauthorized access. Proceed to the Temporary Booth and check for any unattended items. Then, move to the Elevators and verify they are functioning properly. Head over to the Novelties section to monitor activity. Conclude your patrol at the East Entrance and report any unusual findings.""","<think>
 Okay, so I need to figure out how to handle this prompt: ""Robot, begin security patrol at E5 Entrance and ensure no unauthorized access. Proceed to the Temporary Booth and check for any unattended items. Then, move to the Elevators and verify they are functioning properly. Head over to the Novelties section to monitor activity. Conclude your patrol at the East Entrance and report any unusual findings.""
 
@@ -1185,7 +1185,7 @@ The robot processes each command step-by-step, navigating where possible and rep
     }
   ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'East Entrance', 'x': 0, 'y': 0}}, {'action': 'navigate', 'input': {'name': 'Temporary Booth', 'x': 196, 'y': 370}}, {'action': 'speak', 'input': ""Invalid request: 'Elevators' is not a valid waypoint""}, {'action': 'speak', 'input': ""Invalid request: 'Novelties section' is not a valid waypoint""}]}",0.0,0.0,"['E5 Entrance', 'Temporary Booth', 'Elevators', 'Novelties', 'East Entrance']",Nav,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'East Entrance', 'x': 0, 'y': 0}}, {'action': 'navigate', 'input': {'name': 'Temporary Booth', 'x': 196, 'y': 370}}, {'action': 'speak', 'input': ""Invalid request: 'Elevators' is not a valid waypoint""}, {'action': 'speak', 'input': ""Invalid request: 'Novelties section' is not a valid waypoint""}]}",0.0,0.0,"['E5 Entrance', 'Temporary Booth', 'Elevators', 'Novelties', 'East Entrance']",Nav,,
 E7-1,2.0,15.0,"""I need to fresen up. Take me to Shower A, then Shower B. Wate 1 minute at Shower B, then we can go.""","<think>
 Okay, so I'm trying to figure out how to respond to the user's prompt. The user wrote, ""I need to fresen up. Take me to Shower A, then Shower B. Wate 1 minute at Shower B, then we can go."" Hmm, first off, I notice a typo in ""fresen"" which should probably be ""freshen."" But maybe the system is supposed to handle that with fuzzy matching.
 
@@ -1283,7 +1283,7 @@ The system navigates to Shower A but encounters an invalid command for Shower B,
 \boxed{
 - Navigate to Shower A.
 - Speak: ""I'm sorry, but Shower B isn't a valid location.""
-}","{- Navigate to Shower A.- Speak: ""I'm sorry, but Shower B isn't a valid location.""}",0.0,0.0,"['Shower A', 'Shower B']",Nav,XRIF response is Invalid
+}","{- Navigate to Shower A.- Speak: ""I'm sorry, but Shower B isn't a valid location.""}",0.0,0.0,"['Shower A', 'Shower B']",Nav,XRIF response is Invalid,
 E7-1,7.0,45.0,"""Travel to the E5 Entrance and then find the Microwaves.""","<think>
 Okay, let's see. The user wants me to figure out how to respond to the prompt: ""Travel to the E5 Entrance and then find the Microwaves."" 
 
@@ -1415,7 +1415,7 @@ Step-by-step explanation:
 **Answer:**
 
 - The system successfully navigates to E5 Entrance.
-- Then, it informs the user that Microwaves isn't recognized as a valid location.","The system processes each part of the command separately. First, it navigates to E5 Entrance successfully. Then, upon attempting to find Microwaves, which is not a recognized location, an error message is returned.Step-by-step explanation:1. **Navigate to E5 Entrance**: This is a valid command. The system proceeds with navigation.2. **Attempt to Find Microwaves**: Since Microwaves isn't recognized as a valid waypoint, the system returns an error message indicating that it cannot locate this place.**Answer:**- The system successfully navigates to E5 Entrance.- Then, it informs the user that Microwaves isn't recognized as a valid location.",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,XRIF response is Invalid
+- Then, it informs the user that Microwaves isn't recognized as a valid location.","The system processes each part of the command separately. First, it navigates to E5 Entrance successfully. Then, upon attempting to find Microwaves, which is not a recognized location, an error message is returned.Step-by-step explanation:1. **Navigate to E5 Entrance**: This is a valid command. The system proceeds with navigation.2. **Attempt to Find Microwaves**: Since Microwaves isn't recognized as a valid waypoint, the system returns an error message indicating that it cannot locate this place.**Answer:**- The system successfully navigates to E5 Entrance.- Then, it informs the user that Microwaves isn't recognized as a valid location.",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,XRIF response is Invalid,
 E7-1,10.0,69.0,"""I could really go for a shower.""","<think>
 Okay, so I need to figure out how to respond to the user's prompt: ""I could really go for a shower."" Let me break this down step by step.
 
@@ -1449,7 +1449,7 @@ Therefore, the appropriate response is to inform the user that the waypoint they
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Shower B'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Shower B'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 E7-1,8.0,56.0,"""Take me to the E7 silent study.""","<think>
 Okay, so I need to figure out how to respond to the user's prompt. The user wrote, ""Take me to the E7 silent study."" Let me break this down step by step.
 
@@ -1471,7 +1471,7 @@ Therefore, since there's no matching waypoint, the system should output a speak 
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 E7-1,10.0,72.0,"""I could really go for a shower.""","<think>
 Okay, let's figure out how to handle the user's prompt. The user said, ""I could really go for a shower."" I need to determine what action to take based on this.
 
@@ -1493,7 +1493,7 @@ I think the best response here is to tell the user that their requested location
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist. Would you like me to help you navigate somewhere else?'}]}",2069.0,1199.0,['Shower A'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist. Would you like me to help you navigate somewhere else?'}]}",2069.0,1199.0,['Shower A'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 E7-1,15.0,97.0,"""Robot, move to [[Assembly Room]], state 'Assembly Room' upon arrival, and wait for confirmation before proceeding.""","<think>
 Okay, so I need to figure out how to handle the user's prompt where they're asking the robot to move to [[Assembly Room]], state 'Assembly Room' upon arrival, and wait for confirmation before proceeding. Let me break this down step by step.
 
@@ -1517,7 +1517,7 @@ So, the response will be to inform the user that ""Assembly Room"" doesn't exist
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Assembly Room', ('way', 'Assembly Room'), ('wait', 'until confirmation')]",Nav + Action,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Assembly Room', ('way', 'Assembly Room'), ('wait', 'until confirmation')]",Nav + Action,,
 E7-1,4.0,25.0,"""I need to freshen up. Take me two Shower A, then Shower B. Wait 1 minute at Shower B, then we can go.""","<think>
 Okay, so the user wants to freshen up by going to Shower A and then Shower B, waiting a minute at Shower B before moving on. Let's break this down step by step.
 
@@ -1551,7 +1551,7 @@ I think the best course of action is to navigate to Shower A as instructed, then
     }
   ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'Shower A', 'x': 0.0, 'y': 25.0}}, {'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Shower A', 'Shower B']",Nav,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'Shower A', 'x': 0.0, 'y': 25.0}}, {'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Shower A', 'Shower B']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 E7-1,5.0,28.0,"""Honestly, I don't like coffee. go to the robohub""","<think>
 Okay, so I need to figure out how to handle the user's prompt: ""Honestly, I don't like coffee. go to the robohub"". The goal is to generate a proper JSON response based on the given guidelines.
 
@@ -1589,7 +1589,7 @@ In this case, the user is giving a straightforward command after some irrelevant
     }
   ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'RoboHub Entrance', 'x': 25, 'y': 50}}]}",0.0,0.0,['RoboHub'],Nav,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'RoboHub Entrance', 'x': 25, 'y': 50}}]}",0.0,0.0,['RoboHub'],Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 E7-1,1.0,6.0,"""I need to freshen up. Take me to Shower A, then Shower B. Wait 1 minute at Shower B, then we can go.""","<think>
 Okay, let's try to figure out how to handle this user prompt: ""I need to freshen up. Take me to Shower A, then Shower B. Wait 1 minute at Shower B, then we can go."" 
 
@@ -1645,7 +1645,7 @@ So the overall actions would be just one speak action indicating the waypoint do
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Shower A', 'Shower B']",Nav,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Shower A', 'Shower B']",Nav,,
 E7-1,7.0,46.0,"""Travel to the E5 Entrance and then find the Microwaves.""","<think>
 Okay, so I need to figure out how to handle this prompt: ""Travel to the E5 Entrance and then find the Microwaves."" The user wants me to break down my thought process step by step as if I'm an assistant trying to understand what needs to be done.
 
@@ -1780,7 +1780,7 @@ To address the prompt ""Travel to the E5 Entrance and then find the Microwaves,"
    - Proceeded to travel to E5 Entrance since it is a valid location.
    - Unable to locate Microwaves as they are not defined in the provided data.
 
-**Conclusion**: The assistant successfully navigated to E5 Entrance but was unable to find Microwaves due to insufficient information.","To address the prompt ""Travel to the E5 Entrance and then find the Microwaves,"" the following steps were taken:1. **Parse the Command**: The instruction is divided into two parts: traveling to E5 Entrance and finding Microwaves.2. **Verify Waypoints**:   - **E5 Entrance**: Confirmed as a valid waypoint with specific coordinates.   - **Microwaves**: Not listed as a separate waypoint or feature within existing waypoints.3. **Execution**:   - Proceeded to travel to E5 Entrance since it is a valid location.   - Unable to locate Microwaves as they are not defined in the provided data.**Conclusion**: The assistant successfully navigated to E5 Entrance but was unable to find Microwaves due to insufficient information.",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,XRIF response is Invalid
+**Conclusion**: The assistant successfully navigated to E5 Entrance but was unable to find Microwaves due to insufficient information.","To address the prompt ""Travel to the E5 Entrance and then find the Microwaves,"" the following steps were taken:1. **Parse the Command**: The instruction is divided into two parts: traveling to E5 Entrance and finding Microwaves.2. **Verify Waypoints**:   - **E5 Entrance**: Confirmed as a valid waypoint with specific coordinates.   - **Microwaves**: Not listed as a separate waypoint or feature within existing waypoints.3. **Execution**:   - Proceeded to travel to E5 Entrance since it is a valid location.   - Unable to locate Microwaves as they are not defined in the provided data.**Conclusion**: The assistant successfully navigated to E5 Entrance but was unable to find Microwaves due to insufficient information.",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,XRIF response is Invalid,
 E7-1,14.0,89.0,"""Robot, proceed to North Entrance and say 'North Entrance' out loud.""","<think>
 Okay, let's see. The user gave me a prompt where I have to navigate to the North Entrance and then speak its name. So first, I need to figure out how to handle this step by step.
 
@@ -1903,7 +1903,7 @@ Thus, the structured JSON response would include these two actions.
     }
   ]
 }
-```","{'actions': [{'type': 'navigate', 'target': {'x': 2243, 'y': 1083}}, {'type': 'speak', 'content': 'North Entrance'}]}",0.0,0.0,"['North Entrance', ('speak', 'North Entrance')]",Nav + Action,
+```","{'actions': [{'type': 'navigate', 'target': {'x': 2243, 'y': 1083}}, {'type': 'speak', 'content': 'North Entrance'}]}",0.0,0.0,"['North Entrance', ('speak', 'North Entrance')]",Nav + Action,Response Error Missing field: 'action' in action object 0,
 E7-1,11.0,74.0,"""Robot, begin at the North Entrance and proceed to the C&D - Main Entrance to check for any obstructions. Next, visit the Microwaves area and ensure all units are operational. After that, move to Silent Study and verify that the environment remains quiet. Then, navigate to Shower A and Shower B to inspect for cleanliness. Finally, head to the South Entrance and report back with your findings.""","<think>
 Alright, let's tackle this user prompt step by step. The user is giving a detailed set of instructions for the robot to follow. They mentioned starting at the North Entrance, then moving through several waypoints: C&D - Main Entrance, Microwaves area, Silent Study, Shower A and B, and finally South Entrance.
 
@@ -1945,7 +1945,7 @@ Since each step depends on the previous one being successful, if any waypoint is
             ""input"": ""Invalid request: 'Microwaves' is not a valid waypoint""
         }
     ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'North Entrance', 'x': 25, 'y': 0}}, {'action': 'speak', 'input': ""Invalid request: 'Microwaves' is not a valid waypoint""}]}",0.0,0.0,"['North Entrance', 'C&D - Main Entrance', 'Microwaves', 'Silent Study', 'Shower A', 'Shower B', 'South Entrance']",Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'North Entrance', 'x': 25, 'y': 0}}, {'action': 'speak', 'input': ""Invalid request: 'Microwaves' is not a valid waypoint""}]}",0.0,0.0,"['North Entrance', 'C&D - Main Entrance', 'Microwaves', 'Silent Study', 'Shower A', 'Shower B', 'South Entrance']",Nav,,
 E7-1,8.0,58.0,"""Take me to the E7 silent study.""","<think>
 Okay, so I need to figure out how to respond to the user's prompt using the given waypoints and following all the rules provided. The prompt is ""Take me to the E7 silent study."" Let me break this down step by step.
 
@@ -1975,7 +1975,7 @@ So, putting it all together, the actions array will contain a single speak actio
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 E7-1,1.0,2.0,"""Navigate to the Ideas Clinic and then go to the Assembly Room.""","<think>
 Okay, I need to figure out how to respond to the user's prompt. The user wrote, ""Navigate to the Ideas Clinic and then go to the Assembly Room."" Let me break this down step by step.
 
@@ -2021,7 +2021,7 @@ The user is trying to navigate to two locations: the Ideas Clinic and the Assemb
     }
   ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Ideas Clinic', 'x': 100, 'y': 200}}, {'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Ideas Clinic', 'Assembly Room']",Nav,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Ideas Clinic', 'x': 100, 'y': 200}}, {'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Ideas Clinic', 'Assembly Room']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 E7-1,8.0,57.0,"""Take me to the E7 silent study.""","<think>
 Okay, I need to figure out how to respond to the user's prompt: ""Take me to the E7 silent study."" First, I'll analyze this command step by step.
 
@@ -2043,7 +2043,7 @@ Since there are no matching waypoints, according to the rules, I should return a
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 E7-1,13.0,88.0,"""Robot, proceed to Silent Study and wait for 10 minutes.""","<think>
 Okay, so I need to figure out how to respond to the prompt where the robot is told to proceed to ""Silent Study"" and wait for 10 minutes. First, I'll start by understanding the problem.
 
@@ -2083,7 +2083,7 @@ The robot processes the command but finds no matching waypoints for ""Silent Stu
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Silent Study', ('wait', 10, 'minutes')]",Nav + Action,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Silent Study', ('wait', 10, 'minutes')]",Nav + Action,,
 E7-1,12.0,80.0,"""Navigate to the first floor staircase""","<think>
 Okay, so I'm trying to figure out how to handle this prompt where someone says ""Navigate to the first floor staircase."" First off, I need to understand what exactly they're asking for. The user is probably looking to move from their current location to a specific place—the first floor staircase.
 
@@ -2110,7 +2110,7 @@ The user is requesting navigation to ""the first floor staircase,"" which isn't 
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[error waypoint does not exist],,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[error waypoint does not exist],,,
 E7-1,1.0,12.0,"""Take me to the Elevators. Wait there for 15 seconds, and then let's find the East Entrance.""","<think>
 Alright, I'm trying to figure out how to respond to the user's prompt: ""Take me to the Elevators. Wait there for 15 seconds, and then let's find the East Entrance."" 
 
@@ -2134,7 +2134,7 @@ So, I need to structure the JSON response accordingly, using the ""speak"" actio
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Elevators', 'East Entrance']",Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Elevators', 'East Entrance']",Nav,,
 E7-1,1.0,4.0,"""Start at the South Entrance and go to the C&D - Coffee Area.""","<think>
 Okay, I need to figure out how to handle this user prompt: ""Start at the South Entrance and go to the C&D - Coffee Area."" 
 
@@ -2176,7 +2176,7 @@ Putting it all together, the response should include two navigate actions in ord
     }
   ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'South Entrance', 'x': 2243, 'y': 1083}}, {'action': 'navigate', 'input': {'name': 'C&D - Coffee Area', 'x': 100, 'y': 100}}]}",0.0,0.0,"['South Entrance', 'C&D - Coffee Area']",Nav,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'South Entrance', 'x': 2243, 'y': 1083}}, {'action': 'navigate', 'input': {'name': 'C&D - Coffee Area', 'x': 100, 'y': 100}}]}",0.0,0.0,"['South Entrance', 'C&D - Coffee Area']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,All locations are present in the response
 E7-1,8.0,63.0,"""Take me to the E7 silent study.""","<think>
 Okay, I need to figure out how to respond to the user's prompt. The prompt is: ""Take me to the E7 silent study."" 
 
@@ -2208,7 +2208,7 @@ So, the response will be a single action telling the user that the waypoint isn'
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 E7-1,13.0,85.0,"""Robot, go to North Entrance and wait for 15 minutes.""","<think>
 Okay, so I'm trying to figure out how to respond to the user's prompt where they tell me to go to North Entrance and wait for 15 minutes. First, I need to break down what needs to be done step by step.
 
@@ -2421,7 +2421,7 @@ But in any case, my response should follow the structure of actions with navigat
         }
     ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'North Entrance'}}, {'action': 'wait', 'input': 15}]}",0.0,0.0,"['North Entrance', ('wait', 15, 'minutes')]",Nav + Action,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'North Entrance'}}, {'action': 'wait', 'input': 15}]}",0.0,0.0,"['North Entrance', ('wait', 15, 'minutes')]",Nav + Action,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 E7-1,14.0,90.0,"""Robot, navigate to C&D - Hot Food Area and announce 'C&D Hot Food Area' clearly.""","<think>
 Okay, so I've got this prompt where the user is asking the robot to navigate to ""C&D - Hot Food Area"" and then announce that location. Let me break down how I'd approach this.
 
@@ -2439,7 +2439,7 @@ I should also make sure I'm using the correct JSON structure for the response, i
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['C&D - Hot Food', ('speak', 'C&D Hot Food Area')]",Nav + Action,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['C&D - Hot Food', ('speak', 'C&D Hot Food Area')]",Nav + Action,,
 E7-1,15.0,98.0,"""Robot, proceed to [[Elevators]], say 'Elevators' to assist with navigation, and wait for 5 minutes before moving on.""","<think>
 Alright, let's tackle this problem. The user has given me a specific prompt where the robot is instructed to go to ""[[Elevators]]"", say ""Elevators"" upon arrival, and then wait for five minutes.
 
@@ -2463,7 +2463,7 @@ Therefore, the robot should respond by speaking that the waypoint doesn't exist,
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Elevators', ('speak', 'Elevators'), ('wait', 5, 'minutes')]",Nav + Action,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Elevators', ('speak', 'Elevators'), ('wait', 5, 'minutes')]",Nav + Action,,
 E7-1,1.0,1.0,"""Go to the North Entrance and then proceed to the C&D - Main Entrance.""","<think>
 Okay, so I need to figure out how to respond to the user's prompt. The prompt says, ""Go to the North Entrance and then proceed to the C&D - Main Entrance."" Let me break this down step by step.
 
@@ -2621,7 +2621,7 @@ To address the request of navigating first to North Entrance and then to C&D - M
 
 2. **Proceed to C&D - Main Entrance**: After reaching North Entrance, move towards the designated area for C&D - Main Entrance, ensuring timely arrival.
 
-This structured approach ensures both waypoints are visited in the correct order.","To address the request of navigating first to North Entrance and then to C&D - Main Entrance, here is the step-by-step response:1. **Navigate to North Entrance**: Proceed to the specified location using appropriate routes or transportation methods.2. **Proceed to C&D - Main Entrance**: After reaching North Entrance, move towards the designated area for C&D - Main Entrance, ensuring timely arrival.This structured approach ensures both waypoints are visited in the correct order.",0.0,0.0,"['North Entrance', 'C&D - Main Entrance']",Nav,XRIF response is Invalid
+This structured approach ensures both waypoints are visited in the correct order.","To address the request of navigating first to North Entrance and then to C&D - Main Entrance, here is the step-by-step response:1. **Navigate to North Entrance**: Proceed to the specified location using appropriate routes or transportation methods.2. **Proceed to C&D - Main Entrance**: After reaching North Entrance, move towards the designated area for C&D - Main Entrance, ensuring timely arrival.This structured approach ensures both waypoints are visited in the correct order.",0.0,0.0,"['North Entrance', 'C&D - Main Entrance']",Nav,XRIF response is Invalid,
 E7-1,11.0,78.0,"""Robot, begin at the West Entrance and navigate toward Shower A. Then, proceed to Silent Study and pause for 10 seconds before moving to Microwaves. After that, continue to Novelties, then travel to Ideas Clinic. Conclude the test by reaching the South Entrance, ensuring smooth navigation throughout the path.""","<think>
 Okay, so I'm trying to figure out how to respond to this user prompt about a robot navigating through various waypoints. The prompt is pretty detailed and gives specific instructions on where to go and what actions to take in sequence.
 
@@ -2664,7 +2664,7 @@ The robot receives a request to navigate through several waypoints, but upon che
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['West Entrance', 'Shower A', 'Silent Study', 'Microwaves', 'Novelties', 'Ideas Clinic', 'South Entrance']",Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['West Entrance', 'Shower A', 'Silent Study', 'Microwaves', 'Novelties', 'Ideas Clinic', 'South Entrance']",Nav,,
 E7-1,2.0,13.0,"""Take my to the HubRobo""","<think>
 Okay, I need to figure out how to respond to the user's query. The user wrote, ""Take my to the HubRobo."" Hmm, that looks like there might be a typo. Maybe they meant ""take me"" instead of ""take my."" So, the intended message is probably asking to go to the HubRobo location.
 
@@ -2686,7 +2686,7 @@ So, my response will be a speak action with the message indicating that HubRobo 
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['RoboHub'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['RoboHub'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 E7-1,15.0,96.0,"""Robot, go to [[Silent Study]], say 'Silent Study' in a calm voice, and wait for 15 minutes.""","<think>
 Okay, so I'm trying to figure out how to handle this user prompt: ""Robot, go to [[Silent Study]], say 'Silent Study' in a calm voice, and wait for 15 minutes."" 
 
@@ -2708,7 +2708,7 @@ I should structure the response as an array with one action: speaking the error 
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Silent Study', ('speak', 'Silent Study'), ('wait', 15, 'minutes')]",Nav + Action,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Silent Study', ('speak', 'Silent Study'), ('wait', 15, 'minutes')]",Nav + Action,,
 E7-1,2.0,16.0,"""Let's chek out the Novelties store, and then head out the South Entrence.""","<think>
 Okay, so I've got this user prompt that says, ""Let's chek out the Novelties store, and then head out the South Entrence."" Hmm, first off, I notice a typo in ""chek"" which should probably be ""check,"" but maybe it's just a mistake. The main points here are checking out the Novelties store and heading out the South Entrence.
 
@@ -2776,7 +2776,7 @@ The user's request involves two parts: checking out the Novelties store and head
 Given the instructions, if any part of the command refers to an invalid waypoint, the entire action should be aborted with an error message. Therefore, the system will inform the user that the Novelties store does not exist and will not proceed further.
 
 **Response:**
-- Speak action indicating that ""Novelties store"" does not exist.","The user's request involves two parts: checking out the Novelties store and heading out the South Entrence. Upon reviewing the available waypoints, the Novelties store does not exist, while ""South Entrence"" appears to be a typo for ""South Entrance,"" which is listed as a valid waypoint.Given the instructions, if any part of the command refers to an invalid waypoint, the entire action should be aborted with an error message. Therefore, the system will inform the user that the Novelties store does not exist and will not proceed further.**Response:**- Speak action indicating that ""Novelties store"" does not exist.",0.0,0.0,"['Novelties', 'South Entrance']",Nav,XRIF response is Invalid
+- Speak action indicating that ""Novelties store"" does not exist.","The user's request involves two parts: checking out the Novelties store and heading out the South Entrence. Upon reviewing the available waypoints, the Novelties store does not exist, while ""South Entrence"" appears to be a typo for ""South Entrance,"" which is listed as a valid waypoint.Given the instructions, if any part of the command refers to an invalid waypoint, the entire action should be aborted with an error message. Therefore, the system will inform the user that the Novelties store does not exist and will not proceed further.**Response:**- Speak action indicating that ""Novelties store"" does not exist.",0.0,0.0,"['Novelties', 'South Entrance']",Nav,XRIF response is Invalid,
 E7-1,1.0,10.0,"""Starting at the Microwaves, can you guide me back to the E5 Entrance?""","<think>
 Okay, let's see. The user wants me to figure out how to respond to the prompt where they ask for directions from the Microwaves back to the E5 Entrance. 
 
@@ -2798,7 +2798,7 @@ I need to make sure that the JSON structure follows the guidelines: each action 
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': ""Invalid request: 'Microwaves' and 'E5 Entrance' are not valid waypoints""}]}",0.0,0.0,"['Microwaves', 'E5 Entrance']",Nav,
+```","{'actions': [{'action': 'speak', 'input': ""Invalid request: 'Microwaves' and 'E5 Entrance' are not valid waypoints""}]}",0.0,0.0,"['Microwaves', 'E5 Entrance']",Nav,,
 E7-1,2.0,14.0,"""Go from nroth enterance to the Hub""","<think>
 Alright, I'm trying to figure out how to handle this user prompt: ""Go from nroth enterance to the Hub"". First, I notice that the user might have made a typo with ""nroth"" instead of ""north"". But looking at the available waypoints, there's no ""North Entrance"". Wait, actually, checking the list provided earlier, there is a ""South Entrance"" but not a ""North Entrance"". So maybe the user meant ""south entrance"", but they wrote it as ""nroth enterance"". 
 
@@ -2818,7 +2818,7 @@ So, the response should be to speak that the waypoint doesn't exist.
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['North Entrance', 'RoboHub']",Nav,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['North Entrance', 'RoboHub']",Nav,,
 E7-1,7.0,52.0,"""Travel to the E5 Entrance and then find the Microwaves.""","<think>
 Okay, I need to figure out how to respond to the user's prompt. The user said, ""Travel to the E5 Entrance and then find the Microwaves."" Let me break this down step by step.
 
@@ -2844,7 +2844,7 @@ So, my response should be an action that speaks the error message about the Micr
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,,
 E7-1,11.0,77.0,"""Robot, start at C&D - Snack Area and inspect for spills or trash. Then, proceed to C&D - Cold Drink Area and ensure all drinks are properly stocked. Next, move to the C&D - Pastry Area and check for expired products. After that, visit the C&D - Coffee Area to confirm cleanliness. Finally, go to the C&D - Hot Food Area and sanitize any open surfaces before returning to the base station.""","<think>
 Okay, so I need to figure out how to handle this prompt where the robot is given a series of instructions starting from ""C&D - Snack Area"" and then moving through several other specific areas in the C&D section. The user wants the robot to perform inspections or tasks at each location before returning to the base.
 
@@ -2891,7 +2891,7 @@ The robot receives a command to start at ""C&D - Snack Area,"" which isn't recog
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['C&D - Snack Area', 'C&D - Cold Drink Area', 'C&D - Pastry Area', 'C&D - Coffee Area', 'C&D - Hot Food Area']",Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['C&D - Snack Area', 'C&D - Cold Drink Area', 'C&D - Pastry Area', 'C&D - Coffee Area', 'C&D - Hot Food Area']",Nav,,
 E7-1,13.0,86.0,"""Robot, navigate to C&D - Hot Food Area and wait 15 seconds.""","<think>
 Okay, so the user just told me to navigate to ""C&D - Hot Food Area"" and wait for 15 seconds. I need to figure out how to respond to this.
 
@@ -2925,7 +2925,7 @@ Therefore, I should respond that this waypoint doesn't exist.
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['C&D - Hot Food Area', ('wait', 15, 'seconds')]",Nav + Action,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['C&D - Hot Food Area', ('wait', 15, 'seconds')]",Nav + Action,,
 E7-1,7.0,50.0,"""Travel to the E5 Entrance and then find the Microwaves.""","<think>
 Okay, so I need to figure out how to handle this prompt: ""Travel to the E5 Entrance and then find the Microwaves."" Let me break it down step by step.
 
@@ -3074,7 +3074,7 @@ Therefore, in this case, since navigating to E5 is possible, include that action
   ""find"": null,
   ""error_message"": ""Could not find Microwaves""
 }
-```","{'navigate_to': 'E5 Entrance', 'find': None, 'error_message': 'Could not find Microwaves'}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,
+```","{'navigate_to': 'E5 Entrance', 'find': None, 'error_message': 'Could not find Microwaves'}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,,
 E7-1,8.0,59.0,"""Take me to the E7 silent study.""","<think>
 Alright, so I need to figure out how to respond to the user's prompt: ""Take me to the E7 silent study."" Let me break this down step by step. 
 
@@ -3098,7 +3098,7 @@ So, the final answer will be a JSON object containing a single speak action info
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 E7-1,15.0,94.0,"""Robot, proceed to [[North Entrance]], say 'North Entrance' out loud, and wait for 10 minutes.""","<think>
 Okay, so the user sent a prompt where they're telling me to navigate to North Entrance, speak the name of that waypoint, and then wait for 10 minutes. Let me break this down step by step.
 
@@ -3140,7 +3140,7 @@ Finally, putting it all together, the actions array will have three entries: nav
         }
     ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'North Entrance', 'x': 951, 'y': 616}}, {'action': 'speak', 'input': 'North Entrance'}, {'action': 'wait', 'input': 600}]}",0.0,0.0,"['North Entrance', ('speak', 'North Entrance'), ('wait', 10, 'minutes')]",Nav + Action,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'North Entrance', 'x': 951, 'y': 616}}, {'action': 'speak', 'input': 'North Entrance'}, {'action': 'wait', 'input': 600}]}",0.0,0.0,"['North Entrance', ('speak', 'North Entrance'), ('wait', 10, 'minutes')]",Nav + Action,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 E7-1,3.0,20.0,"""I need freshen up. Take me Shower A, then Shower B. Wait 1 minute at Shower B, then we go can.""","<think>
 Okay, let's break down this user prompt step by step. The user wrote, ""I need freshen up. Take me Shower A, then Shower B. Wait 1 minute at Shower B, then we go can.""
 
@@ -3166,7 +3166,7 @@ I'll structure the response to include a single speak action informing the user 
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': ""Invalid request: 'Shower B' and 'we go can' are not valid waypoints""}]}",0.0,0.0,"['Shower A', 'Shower B']",Nav,
+```","{'actions': [{'action': 'speak', 'input': ""Invalid request: 'Shower B' and 'we go can' are not valid waypoints""}]}",0.0,0.0,"['Shower A', 'Shower B']",Nav,,
 E7-1,14.0,91.0,"""Robot, go to Silent Study and say 'Silent Study' in a calm voice.""","<think>
 Okay, I need to figure out how to respond to the user's prompt: ""Robot, go to Silent Study and say 'Silent Study' in a calm voice."" Let me break this down step by step.
 
@@ -3192,7 +3192,7 @@ Therefore, the appropriate response is for the robot to inform the user that ""S
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Silent Study', ('speak', 'Silent Study')]",Nav + Action,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Silent Study', ('speak', 'Silent Study')]",Nav + Action,,
 E7-1,10.0,71.0,"""I could really go for a shower.""","<think>
 Okay, let's figure out how to respond to the user prompt. The user said, ""I could really go for a shower."" So, I need to determine if this relates to any of the available waypoints.
 
@@ -3253,7 +3253,7 @@ So the response would be: ""I cannot navigate to the shower at this time.""
 
 The system does not have a specific waypoint for a shower other than the starting location, which is already where the user is. Therefore, the appropriate response is:
 
-""I cannot navigate to the shower at this time.""","The system does not have a specific waypoint for a shower other than the starting location, which is already where the user is. Therefore, the appropriate response is:""I cannot navigate to the shower at this time.""",827.0,610.0,['Shower B'],Nav,XRIF response is Invalid
+""I cannot navigate to the shower at this time.""","The system does not have a specific waypoint for a shower other than the starting location, which is already where the user is. Therefore, the appropriate response is:""I cannot navigate to the shower at this time.""",827.0,610.0,['Shower B'],Nav,XRIF response is Invalid,
 E7-1,12.0,83.0,"""Where can I find an ark reactor, can you go there?""","<think>
 Okay, so the user is asking, ""Where can I find an ark reactor, can you go there?"" Hmm, let me break this down. First, they're looking for something called an ""ark reactor."" I don't recall any waypoints named that from what's provided.
 
@@ -3275,7 +3275,7 @@ So, I'll construct an actions array with one speak action informing them that ""
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[error waypoint does not exist],,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[error waypoint does not exist],,,
 E7-1,7.0,51.0,"""Travel to the E5 Entrance and then find the Microwaves.""","<think>
 Okay, so I need to figure out how to respond to the user's prompt: ""Travel to the E5 Entrance and then find the Microwaves."" Let me break this down step by step.
 
@@ -3319,7 +3319,7 @@ I need to structure this correctly, making sure each step is clear and follows t
         }
     ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 2243, 'y': 1083}}, {'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 2243, 'y': 1083}}, {'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 E7-1,8.0,61.0,"""Take me to the E7 silent study.""","<think>
 Okay, let's try to figure out how to respond to the user's prompt. The user wrote, ""Take me to the E7 silent study."" First, I need to determine if this is a valid waypoint based on the provided data.
 
@@ -3343,7 +3343,7 @@ Therefore, since the waypoint doesn't exist, I need to return an action where th
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 E7-1,7.0,44.0,"""Travel to the E5 Entrance and then find the Microwaves.""","<think>
 Okay, let's see what the user is asking for. They want me to travel to the E5 Entrance and then find the Microwaves. First, I need to check if both of these waypoints exist based on the data provided.
 
@@ -3373,7 +3373,7 @@ I'll structure my response by first navigating to E5 Entrance and then speaking 
     }
   ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 1984, 'y': 2017}}, {'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 1984, 'y': 2017}}, {'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 E7-1,3.0,22.0,"""It's too loud here! Let's go Silent Study, and then afterwards, we can check out RoboHub.""","<think>
 Okay, let's break down this prompt. The user says, ""It's too loud here! Let's go Silent Study, and then afterwards, we can check out RoboHub."" I need to figure out the actions required.
 
@@ -3446,7 +3446,7 @@ However, the system may handle multiple unknown waypoints with a single message 
     ""content"": ""'RoboHub' also doesn't seem to be a recognized location.""
   }
 ]
-```","{    ""role"": ""assistant"",    ""content"": ""I'm sorry, but 'Silent Study' does not exist.""  },  {    ""role"": ""assistant"",    ""content"": ""'RoboHub' also doesn't seem to be a recognized location.""  }",0.0,0.0,"['Silent Study', 'RoboHub']",Nav,XRIF response is Invalid
+```","{    ""role"": ""assistant"",    ""content"": ""I'm sorry, but 'Silent Study' does not exist.""  },  {    ""role"": ""assistant"",    ""content"": ""'RoboHub' also doesn't seem to be a recognized location.""  }",0.0,0.0,"['Silent Study', 'RoboHub']",Nav,XRIF response is Invalid,
 E7-1,7.0,47.0,"""Travel to the E5 Entrance and then find the Microwaves.""","<think>
 Okay, so I've got this prompt where the user wants me to travel to the E5 Entrance first and then find the microwaves. Let me break down how I should approach this.
 
@@ -3536,7 +3536,7 @@ However, upon recognizing the unknown ""microwaves,"" the system returns:
   ""intent"": ""SPEAK"",
   ""command"": ""the waypoint microwaves is not recognized.""
 }
-```","{  ""intent"": ""NAVIGATE"",  ""command"": ""e5 entrance""}```However, upon recognizing the unknown ""microwaves,"" the system returns:```json{  ""intent"": ""SPEAK"",  ""command"": ""the waypoint microwaves is not recognized.""}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,XRIF response is Invalid
+```","{  ""intent"": ""NAVIGATE"",  ""command"": ""e5 entrance""}```However, upon recognizing the unknown ""microwaves,"" the system returns:```json{  ""intent"": ""SPEAK"",  ""command"": ""the waypoint microwaves is not recognized.""}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,XRIF response is Invalid,
 E7-1,8.0,60.0,"""Take me to the E7 silent study.""","<think>
 Okay, so I need to figure out how to respond to the user's prompt. Let me read through everything carefully.
 
@@ -3577,7 +3577,7 @@ I don't need to navigate anywhere else because the command is only about moving 
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 E7-1,12.0,79.0,"""go to the vending machines and get me a lays bbq chips""","<think>
 Okay, so I need to figure out how to respond to the prompt: ""go to the vending machines and get me a lays bbq chips"". Hmm. Let's break this down step by step.
 
@@ -3601,7 +3601,7 @@ Therefore, the action would be a speak command informing the user that the vendi
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[error waypoint does not exist],,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[error waypoint does not exist],,,
 E7-1,1.0,8.0,"""I'm feeling peckish. Can we swing by the C&D - Snack Area and then grab a drink at the C&D - Cold Drink Area?""","<think>
 Alright, let's break down this user's prompt. They mentioned they're feeling peckish and want to swing by the C&D - Snack Area first and then grab a drink at the C&D - Cold Drink Area. 
 
@@ -3635,7 +3635,7 @@ So the plan is: first navigate to C&D - Coffee Area, then to C&D - Cold Drink Ar
         }
     ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Coffee Area', 'x': 100, 'y': 100}}, {'action': 'navigate', 'input': {'name': 'C&D - Cold Drink Area', 'x': 50, 'y': 25}}]}",0.0,0.0,"['C&D - Snack Area', 'C&D - Cold Drink Area']",Nav,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Coffee Area', 'x': 100, 'y': 100}}, {'action': 'navigate', 'input': {'name': 'C&D - Cold Drink Area', 'x': 50, 'y': 25}}]}",0.0,0.0,"['C&D - Snack Area', 'C&D - Cold Drink Area']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 E7-1,10.0,73.0,"""I could really go for a shower.""","<think>
 Okay, so I have to figure out how the user's message ""I could really go for a shower."" should be processed. Let me break it down step by step.
 
@@ -3674,7 +3674,7 @@ So the output should be a single action where the assistant speaks, saying that 
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",874.0,613.0,"['Shower A', 'Shower B']",Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",874.0,613.0,"['Shower A', 'Shower B']",Nav,,
 E7-1,7.0,53.0,"""Travel to the E5 Entrance and then find the Microwaves.""","<think>
 Okay, so I need to figure out how to handle this prompt: ""Travel to the E5 Entrance and then find the Microwaves."" Let me break it down step by step.
 
@@ -3706,7 +3706,7 @@ Therefore, I need to create an actions array that includes a single speak action
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,,
 E7-1,5.0,31.0,"""There's no good coffee here. Don't go to the C&D""","<think>
 Okay, so I need to figure out how to respond to the user's prompt using the given waypoints and functions. The user wrote, ""There's no good coffee here. Don't go to the C&D."" 
 
@@ -3780,7 +3780,7 @@ The system recognizes that ""C&D"" refers to ""C&D - Coffee Area."" Since the us
     ""text"": ""I understand that you don't recommend going to C&D - Coffee Area.""
   }
 }
-```","{'action': '/speak', 'params': {'text': ""I understand that you don't recommend going to C&D - Coffee Area.""}}",,,[],Nav,
+```","{'action': '/speak', 'params': {'text': ""I understand that you don't recommend going to C&D - Coffee Area.""}}",,,[],Nav,,
 E7-1,12.0,82.0,"""Can you go to the Dairy Queen?""","<think>
 Okay, so I've got this prompt where the user is asking me to ""go to the Dairy Queen."" First, I need to figure out if there's a matching waypoint for that. Let's see... The list of waypoints provided includes places like C&D - Coffee Area, C&D - Coffee Area again, and others, but there's no mention of Dairy Queen or anything related.
 
@@ -3802,7 +3802,7 @@ Since no waypoints meet the threshold, I'll need to respond that the waypoint do
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[error waypoint does not exist],,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[error waypoint does not exist],,,
 E7-1,13.0,87.0,"""Robot, go to Temporary Booth and wait for 30 minutes.""","<think>
 Alright, let's break down the user's prompt step by step. The command given is: ""Robot, go to Temporary Booth and wait for 30 minutes."" 
 
@@ -3822,7 +3822,7 @@ Therefore, the response should inform the user about the unsupported action and 
       ""input"": ""Unsupported action requested""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'Unsupported action requested'}]}",0.0,0.0,"['Temporary Booth', ('wait', 30, 'minutes')]",Nav + Action,
+}","{'actions': [{'action': 'speak', 'input': 'Unsupported action requested'}]}",0.0,0.0,"['Temporary Booth', ('wait', 30, 'minutes')]",Nav + Action,,
 E7-1,8.0,62.0,"""Take me to the E7 silent study.""","<think>
 Okay, let's try to figure out how to handle this user prompt. The user wrote, ""Take me to the E7 silent study."" I need to determine if this matches any of the predefined waypoints.
 
@@ -3858,7 +3858,7 @@ Since there's only one matching waypoint, it's selected without ambiguity. The s
             }
         }
     ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 Silent Study', 'x': 100, 'y': 100}}]}",0.0,0.0,['Silent Study'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 Silent Study', 'x': 100, 'y': 100}}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 E7-1,11.0,75.0,"""Robot, start at C&D - Hot Food Area and collect a prepared order. Move to RoboHub and drop off the package. Then, proceed to Ideas Clinic for the next delivery. After that, navigate to the Assembly Room to complete another drop-off. Lastly, return to C&D - Coffee Area and confirm the next order for transport.""","<think>
 Alright, let me try to figure out how to handle this prompt step by step. So, the user is asking the robot to perform a series of tasks starting from the ""C&D - Hot Food Area"" and moving through several waypoints, ending back at the ""C&D - Coffee Area"".
 
@@ -3880,7 +3880,7 @@ So, the robot should speak a message informing the user that ""C&D - Hot Food Ar
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['C&D - Hot Food Area', 'RoboHub', 'Ideas Clinic', 'Assembly Room', 'C&D - Coffee Area']",Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['C&D - Hot Food Area', 'RoboHub', 'Ideas Clinic', 'Assembly Room', 'C&D - Coffee Area']",Nav,,
 E7-1,6.0,39.0,"""Take me to the E7 silent study.""","<think>
 Okay, so I have this prompt where someone wants to be taken to ""E7 silent study."" Let's break down how I would handle this.
 
@@ -3904,7 +3904,7 @@ The user requested to be taken to ""E7 silent study."" After checking the availa
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",1500.0,525.0,['Silent Study'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",1500.0,525.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 E7-1,6.0,42.0,"""Take me to the E7 silent study.""","<think>
 Alright, let's break down how I approached this problem step by step. 
 
@@ -3930,7 +3930,7 @@ Given that no matching waypoint exists and I can't find any alternative interpre
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",2069.0,1199.0,['Silent Study'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",2069.0,1199.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 E7-1,1.0,7.0,"""Let's check out the Novelties store, and then head out the South Entrance.""","<think>
 Okay, so I need to figure out how to respond to the user's prompt. The user wrote, ""Let's check out the Novelties store, and then head out the South Entrance."" First, I should parse this sentence and identify the key components.
 
@@ -3964,7 +3964,7 @@ So in this case, since the first part is unknown, the system's actions should on
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Novelties', 'South Entrance']",Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Novelties', 'South Entrance']",Nav,,
 E7-1,13.0,84.0,"""Robot, proceed to C&D - Main Entrance and wait for 10 minutes.""","<think>
 Okay, I need to figure out how to respond to the user's prompt. The user said, ""Robot, proceed to C&D - Main Entrance and wait for 10 minutes."" 
 
@@ -3996,7 +3996,7 @@ Putting it all together, the response should have two actions: navigate and wait
             ""input"": 600
         }
     ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Main Entrance', 'x': 25, 'y': 75}}, {'action': 'wait', 'input': 600}]}",0.0,0.0,"['C&D - Main Entrance', ('wait', 10, 'minutes')]",Nav + Action,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Main Entrance', 'x': 25, 'y': 75}}, {'action': 'wait', 'input': 600}]}",0.0,0.0,"['C&D - Main Entrance', ('wait', 10, 'minutes')]",Nav + Action,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 E7-1,4.0,26.0,"""Starting at the Microwaves, can you guide me back to the E5 Enterance?""","<think>
 Okay, so I need to figure out how to respond to this prompt where someone is asking to be guided back from the Microwaves to the E5 Entrance. Let's break it down step by step.
 
@@ -4028,7 +4028,7 @@ I don't have information about the Microwaves as a valid waypoint, so my respons
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Microwaves', 'E5 Entrance']",Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"['Microwaves', 'E5 Entrance']",Nav,,
 E7-1,5.0,30.0,"""I wonder how many entrances there are to E7. Also, Go to the C&D""","<think>
 Okay, so I've got this user prompt where someone is asking about the number of entrances to E7 and then telling me to go to C&D. First, I need to figure out what's being asked here.
 
@@ -4091,4 +4091,4 @@ The user's prompt includes two parts: asking about entrances to E7 and navigatin
     }
   ]
 }
-```","{'actions': [{'type': 'speak', 'text': ""I'm sorry, but I don't have information about entrances for E7."", 'id': 1}, {'type': 'navigate', 'coordinates': {'x': 100, 'y': 100}, 'id': 2}]}",0.0,0.0,['C&D - Main Entrance'],Nav,
+```","{'actions': [{'type': 'speak', 'text': ""I'm sorry, but I don't have information about entrances for E7."", 'id': 1}, {'type': 'navigate', 'coordinates': {'x': 100, 'y': 100}, 'id': 2}]}",0.0,0.0,['C&D - Main Entrance'],Nav,,

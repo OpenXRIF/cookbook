@@ -15,5 +15,6 @@
     "Starting X": 1286.0,
     "Starting Y": 843.0,
     "Expected Response": "['Silent Study']",
-    "Expected Response Type": "Nav"
+    "Expected Response Type": "Nav",
+    "Error Message": "Expected Response Error: Expected Response Type is not correct for action object 0"
 }

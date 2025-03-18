@@ -23,5 +23,6 @@
     "Starting X": 0.0,
     "Starting Y": 0.0,
     "Expected Response": "['C&D - Main Entrance', ('wait', 10, 'minutes')]",
-    "Expected Response Type": "Nav + Action"
+    "Expected Response Type": "Nav + Action",
+    "Error Message": "Expected Response Error: Expected Response Type is not 'Nav' for action object 0"
 }

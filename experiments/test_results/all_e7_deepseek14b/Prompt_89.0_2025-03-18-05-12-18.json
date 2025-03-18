@@ -22,5 +22,6 @@
     "Starting X": 0.0,
     "Starting Y": 0.0,
     "Expected Response": "['North Entrance', ('speak', 'North Entrance')]",
-    "Expected Response Type": "Nav + Action"
+    "Expected Response Type": "Nav + Action",
+    "Error Message": "Response Error Missing field: 'action' in action object 0"
 }
