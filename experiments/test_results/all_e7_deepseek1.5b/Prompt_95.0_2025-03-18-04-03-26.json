@@ -1,0 +1,49 @@
+{
+    "Data Set": "E7-1",
+    "Experiment ID": 15.0,
+    "Prompt ID": 95.0,
+    "Prompt": "\"Robot, navigate to [[C&D - Hot Food Area]], announce 'C&D Hot Food Area' clearly, and wait until further instructions.\"",
+    "Full LLM Response": "<think>\nOkay, so the user wants me to process this prompt step by step. Let's see what they're asking for.\n\nFirst, I'll look at the example given. They provided a prompt about navigating to a waypoint called C&D - Coffee Area and then announcing it. Then they went on to ask Zach for keys, which involved waiting and holding onto them before dropping them off at Ideas Clinic. \n\nSo the main goal here is to automate these steps using a command-line interface, right? The user wants me to handle both navigation and commands that involve fetching items from specific places.\n\nI remember the previous examples where they processed commands in order unless stated otherwise. So maybe I need to split this into two parts: first navigating to the area, then getting the keys, and finally dropping them off.\n\nLooking at the waypoint names provided earlier, there are several like C&D - Hot Food Area. But since the user only specified C&D - Coffee Area here, that might be a limitation for now. I should note that if more areas are available, it could affect the response.\n\nNext, I need to make sure that any command processing is done in order. So navigation first, then fetching keys, then dropping them. Each action needs to be clearly specified with inputs like the waypoint name and possibly coordinates.\n\nI also notice that each example uses specific commands within square brackets, which suggests that they can handle multiple areas or places easily. I'll make sure to follow this pattern and include any necessary parameters if needed.\n\nWait, in the initial example, after the user gave a command, they had to wait for Zach before dropping keys. So maybe the process is: navigate to area A, then ask someone for items (keys), which involves waiting, then drop them off at area B. This might require more steps than just navigating directly.\n\nI should structure the response accordingly, perhaps by having separate actions for each step. That way, it's clear and follows the example given.\n\nAlso, I need to consider error handling if a waypoint isn't found. The user mentioned that if it's unknown, they return a speak action with an error message. So if C&D - Coffee Area isn't in the known list, the response should handle that gracefully.\n\nI think I've got the flow: process each command step-by-step, ensuring navigation is done first, followed by fetching items, and then dropping them. Each part needs to be clear so the user can input everything as they go.\n\nNow, putting it all together, I'll outline the steps and structure the response with the appropriate actions and inputs for each step. That should cover all bases the user provided.\n</think>\n\n{\n  \"actions\": [\n    {\n      \"action\": \"navigate\",\n      \"input\": {\n        \"name\": \"C&D - Hot Food Area\",\n        \"x\": 100,\n        \"y\": 100\n      }\n    },\n    {\n      \"action\": \"speak\",\n      \"input\": \"Hey Zach, can you hand me the keys?\"\n    },\n    {\n      \"action\": \"wait\",\n      \"input\": 10\n    },\n    {\n      \"action\": \"navigate\",\n      \"input\": {\n        \"name\": \"Room 1427 - Ideas Clinic\",\n        \"x\": 25,\n        \"y\": 75\n      }\n    },\n    {\n      \"action\": \"speak\",\n      \"input\": \"Announce 'Ideas Clinic Hot Food Area'\"\n    },\n    {\n      \"action\": \"navigate\",\n      \"input\": { \n        \"name\": \"Room 1427 - IdeasClinicHotFoodArea\" \n      }\n    }\n  ]\n}",
+    "XRIF Generated": {
+        "actions": [
+            {
+                "action": "navigate",
+                "input": {
+                    "name": "C&D - Hot Food Area",
+                    "x": 100,
+                    "y": 100
+                }
+            },
+            {
+                "action": "speak",
+                "input": "Hey Zach, can you hand me the keys?"
+            },
+            {
+                "action": "wait",
+                "input": 10
+            },
+            {
+                "action": "navigate",
+                "input": {
+                    "name": "Room 1427 - Ideas Clinic",
+                    "x": 25,
+                    "y": 75
+                }
+            },
+            {
+                "action": "speak",
+                "input": "Announce 'Ideas Clinic Hot Food Area'"
+            },
+            {
+                "action": "navigate",
+                "input": {
+                    "name": "Room 1427 - IdeasClinicHotFoodArea"
+                }
+            }
+        ]
+    },
+    "Starting X": 0.0,
+    "Starting Y": 0.0,
+    "Expected Response": "['C&D - Hot Food Area', ('speak', 'C&D Hot Food Area'), ('wait', 'until further instructions')]",
+    "Expected Response Type": "Nav + Action"
+}

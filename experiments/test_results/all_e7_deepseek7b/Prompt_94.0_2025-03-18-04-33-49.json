@@ -1,0 +1,19 @@
+{
+    "Data Set": "E7-1",
+    "Experiment ID": 15.0,
+    "Prompt ID": 94.0,
+    "Prompt": "\"Robot, proceed to [[North Entrance]], say 'North Entrance' out loud, and wait for 10 minutes.\"",
+    "Full LLM Response": "<think>\nOkay, let's break down how I approached the user prompt. The user provided a detailed scenario with several waypoints and commands. My first step was to understand each waypoint name by normalizing them\u2014converting to lowercase and removing any extraneous tokens. This helped in matching the input more accurately.\n\nNext, I tokenized both the user's input and the waypoint names. For each known waypoint, I checked if all its tokens were present in the input or if a high percentage (80%) matched. This allowed for some extra tokens without causing a mismatch.\n\nI then selected the waypoint with the highest similarity score. If no match was found, I defaulted to speaking about an unknown waypoint. The final action was to return a speak action indicating the unknown zone.\n</think>\n\n{\n  \"actions\": [\n    {\n      \"action\": \"speak\",\n      \"input\": \"This waypoint does not exist\"\n    }\n  ]\n}",
+    "XRIF Generated": {
+        "actions": [
+            {
+                "action": "speak",
+                "input": "This waypoint does not exist"
+            }
+        ]
+    },
+    "Starting X": 0.0,
+    "Starting Y": 0.0,
+    "Expected Response": "['North Entrance', ('speak', 'North Entrance'), ('wait', 10, 'minutes')]",
+    "Expected Response Type": "Nav + Action"
+}

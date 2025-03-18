@@ -1,0 +1,19 @@
+{
+    "Data Set": "E7-1",
+    "Experiment ID": 12.0,
+    "Prompt ID": 83.0,
+    "Prompt": "\"Where can I find an ark reactor, can you go there?\"",
+    "Full LLM Response": "<think>\nAlright, let's tackle the user prompt step by step. The question is asking, \"Where can I find an ark reactor, can you go there?\" \n\nFirst, I need to identify if \"ark reactor\" corresponds to any known waypoint from the provided data. Looking through the list of waypoints, I don't see a waypoint named \"ark reactor.\" So, according to the instructions, since it's an unknown waypoint, we should trigger the default action.\n\nNext, based on the supported edge cases mentioned, when an unknown waypoint is encountered, the system should return an action with \"action\": \"speak\" and provide an error message. \n\nSo, the appropriate response would be a speak action informing the user that they can't find an ark reactor among the available waypoints.\n</think>\n\n```json\n{\n  \"actions\": [\n    {\n      \"action\": \"speak\",\n      \"input\": \"This waypoint does not exist: 'ark reactor'\"\n    }\n  ]\n}\n```",
+    "XRIF Generated": {
+        "actions": [
+            {
+                "action": "speak",
+                "input": "This waypoint does not exist: 'ark reactor'"
+            }
+        ]
+    },
+    "Starting X": 0.0,
+    "Starting Y": 0.0,
+    "Expected Response": "[error waypoint does not exist]",
+    "Expected Response Type": NaN
+}
