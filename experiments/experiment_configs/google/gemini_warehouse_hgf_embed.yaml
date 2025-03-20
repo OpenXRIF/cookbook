@@ -1,0 +1,14 @@
+---
+prompt_template: "prompts/warehouse_actions_1.yaml"
+waypoints_csv: "waypoint_datasets/warehouse_waypoints.csv"
+language_model_type: "google"
+embed_model_type: "HuggingFace"
+language_model: "gemini-2.0-flash"
+embed_model: "sentence-transformers/all-MiniLM-L6-v2"
+fetch_all: True
+chat_kwargs: 
+   num_predict : 500
+   temperature : 0.2
+   top_p : 0.2
+output_folder: "gemini_warehouse_hgf_embed"
+test_dataset: "test_datasets/warehouse_tests.csv"

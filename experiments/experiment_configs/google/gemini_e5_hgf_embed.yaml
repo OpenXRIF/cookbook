@@ -1,0 +1,14 @@
+---
+prompt_template: "prompts/e7_xrif_actions_6.yaml"
+waypoints_csv: "waypoint_datasets/uw_e5_floor1.csv"
+language_model_type: "google"
+embed_model_type: "HuggingFace"
+language_model: "gemini-2.0-flash"
+embed_model: "sentence-transformers/all-MiniLM-L6-v2"
+fetch_all: True
+chat_kwargs: 
+   num_predict : 500
+   temperature : 0.2
+   top_p : 0.2
+output_folder: "gemini_e5_hgf_embed"
+test_dataset: "test_datasets/E5_Test_Cases.csv"
