@@ -53,5 +53,6 @@
     "Starting X": 0.0,
     "Starting Y": 0.0,
     "Expected Response": "['C&D - Snack Area', 'C&D - Cold Drink Area', 'C&D - Pastry Area', 'C&D - Coffee Area', 'C&D - Hot Food Area']",
-    "Expected Response Type": "Nav"
+    "Expected Response Type": "Nav",
+    "Error Message": ""
 }

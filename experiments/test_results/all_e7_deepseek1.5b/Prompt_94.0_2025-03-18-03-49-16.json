@@ -28,5 +28,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['North Entrance', ('speak', 'North Entrance'), ('wait', 10, 'minutes')]",
     "Expected Response Type": "Nav + Action",
-    "Error Message": "Expected Response Error: Expected Response Type is not 'Nav' for action object 0"
+    "Error Message": "Expected location name: N&D - North Entrance does not match with the provided location name: North Entrance"
 }

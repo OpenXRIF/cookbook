@@ -64,7 +64,7 @@ I think I'll proceed with treating this as a navigation problem and use the navi
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'South Entrance', 'x': 0.0, 'y': 0.0}}, {'action': 'navigate', 'input': {'name': 'C&D - Coffee Area', 'x': 100, 'y': 100}}]}",0.0,0.0,"['South Entrance', 'C&D - Coffee Area']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,All locations are present in the response
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'South Entrance', 'x': 0.0, 'y': 0.0}}, {'action': 'navigate', 'input': {'name': 'C&D - Coffee Area', 'x': 100, 'y': 100}}]}",0.0,0.0,"['South Entrance', 'C&D - Coffee Area']",Nav,,All locations are present in the response
 E7-1,12.0,83.0,"""Where can I find an ark reactor, can you go there?""","<think>
 Okay, so I'm trying to figure out where the user can find an Ark reactor. First, I need to look at the available waypoints provided. The main ones are C&D - Coffee Area, C&D - Coffee Zone, and others like D and E zones. Hmm, I don't see any waypoint named ""Ark reactor"" or "" Ark reactor"". That means it's not a known waypoint, so according to the guidelines, if there's no such waypoint, I should output an action that says ""speak"" with the message indicating that it doesn't exist.
 
@@ -118,7 +118,7 @@ I should structure this as an action array with ""navigate"" for RoboHub and han
       ""input"": ""The Silent Study is unknown, so I cannot proceed.""
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'RoboHub', 'x': 25, 'y': 140}}, {'action': 'speak', 'input': 'The Silent Study is unknown, so I cannot proceed.'}]}",0.0,0.0,"['RoboHub', 'Silent Study']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'RoboHub', 'x': 25, 'y': 140}}, {'action': 'speak', 'input': 'The Silent Study is unknown, so I cannot proceed.'}]}",0.0,0.0,"['RoboHub', 'Silent Study']",Nav,Expected Response Error: Expected Response Type is not correct for action object 1,
 E7-1,15.0,94.0,"""Robot, proceed to [[North Entrance]], say 'North Entrance' out loud, and wait for 10 minutes.""","<think>
 Okay, I need to help the user with their prompt. They want me to process the command ""Robot, proceed to [North Entrance], say 'North Entrance' out loud, and wait for 10 minutes."" 
 
@@ -181,7 +181,7 @@ So the output would include two actions: navigate to North Entrance and then spe
             ""input"": ""North Entrance""
         }
     ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'North Entrance'}}, {'action': 'speak', 'input': 'North Entrance'}]}",0.0,0.0,"['North Entrance', ('speak', 'North Entrance')]",Nav + Action,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'North Entrance'}}, {'action': 'speak', 'input': 'North Entrance'}]}",0.0,0.0,"['North Entrance', ('speak', 'North Entrance')]",Nav + Action,,
 E7-1,1.0,10.0,"""Starting at the Microwaves, can you guide me back to the E5 Entrance?""","<think>
 Okay, so I need to figure out how to handle this command using the provided waypoint system. Let's break it down step by step.
 
@@ -291,7 +291,7 @@ I should make sure that both waypoints are properly addressed in order, without 
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 100, 'y': 20}}, {'action': 'navigate', 'input': {'name': 'Microwave Zone', 'x': 75, 'y': 65}}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 100, 'y': 20}}, {'action': 'navigate', 'input': {'name': 'Microwave Zone', 'x': 75, 'y': 65}}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected location name: Microwave Zone does not match with the provided location name: Microwaves,
 E7-1,13.0,87.0,"""Robot, go to Temporary Booth and wait for 30 minutes.""","<think>
 Alright, let me try to figure out how to respond to this user prompt. The prompt says, ""Robot, go to Temporary Booth and wait for 30 minutes."" So, first, I need to understand what's being asked here.
 
@@ -355,7 +355,7 @@ I'll structure the response with two actions: navigate to room 1427 - ideas clin
             }
         }
     ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Room 1427 - Ideas Clinic', 'x': 25, 'y': 75}}, {'action': 'navigate', 'input': {'name': 'Assemble Room', 'x': 25, 'y': 75}}]}",0.0,0.0,"['Ideas Clinic', 'Assembly Room']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Room 1427 - Ideas Clinic', 'x': 25, 'y': 75}}, {'action': 'navigate', 'input': {'name': 'Assemble Room', 'x': 25, 'y': 75}}]}",0.0,0.0,"['Ideas Clinic', 'Assembly Room']",Nav,Expected location name: Room 1427 - Ideas Clinic does not match with the provided location name: Ideas Clinic,
 E7-1,2.0,16.0,"""Let's chek out the Novelties store, and then head out the South Entrence.""","<think>
 Alright, I'm trying to figure out how to respond to the prompt: ""Let's chek out the Novelties store, and then head out the South Entrence."" First, I need to break down what this means. The user wants to check out a store named Novelties and then go to the South Entranceway.
 
@@ -442,7 +442,7 @@ I think that's it. Both commands are separate, so two navigate actions should be
         }
     ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'North Entrance', 'x': 100, 'y': 50}}, {'action': 'navigate', 'input': {'name': 'C&D - Main Entrance', 'x': 25, 'y': 75}}]}",0.0,0.0,"['North Entrance', 'C&D - Main Entrance']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,All locations are present in the response
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'North Entrance', 'x': 100, 'y': 50}}, {'action': 'navigate', 'input': {'name': 'C&D - Main Entrance', 'x': 25, 'y': 75}}]}",0.0,0.0,"['North Entrance', 'C&D - Main Entrance']",Nav,,All locations are present in the response
 E7-1,12.0,83.0,"""Where can I find an ark reactor, can you go there?""","<think>
 Okay, so I'm looking at this prompt: ""Where can I find an ark reactor, can you go there?"" Hmm, that's interesting. Let me break it down.
 
@@ -564,7 +564,7 @@ The user is requesting to ""Take me to the E7 silent study."" Let's break this d
 }
 ```
 
-This structure clearly shows that the user is navigating to the E7 Silent Study, located at coordinates (25, 75).","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 Silent Study', 'x': 25, 'y': 75}}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+This structure clearly shows that the user is navigating to the E7 Silent Study, located at coordinates (25, 75).","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 Silent Study', 'x': 25, 'y': 75}}]}",0.0,0.0,['Silent Study'],Nav,Expected location name: E7 Silent Study does not match with the provided location name: Silent Study,
 E7-1,2.0,17.0,"""I'm fealing peckish. Can we swing by the C&D - Snack Area and then grab a drink at the C&D - Cold Drink Aeria?""","<think>
 Okay, let me try to figure out how to approach this task. So, I have to help someone respond to their query about swinging by a waypoint and grabbing a drink. The user mentioned they feel peckish, which makes me think maybe they want something to eat or grab. 
 
@@ -1131,7 +1131,7 @@ I think that covers everything. The user is asking for specific areas they can v
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Room 01234 - Novelties Store', 'x': 50, 'y': 50}}, {'action': 'navigate', 'input': {'name': 'C&D 1234 - Novelties Store', 'x': 100, 'y': 100}}]}",0.0,0.0,"['Novelties', 'South Entrance']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Room 01234 - Novelties Store', 'x': 50, 'y': 50}}, {'action': 'navigate', 'input': {'name': 'C&D 1234 - Novelties Store', 'x': 100, 'y': 100}}]}",0.0,0.0,"['Novelties', 'South Entrance']",Nav,Expected location name: Room 01234 - Novelties Store does not match with the provided location name: Novelties,
 E7-1,1.0,7.0,"""Let's check out the Novelties store, and then head out the South Entrance.""","<think>
 Okay, so I'm trying to figure out how to process this user prompt. The task is to generate a set of actions based on the given waypoints and commands. Let me break it down step by step.
 
@@ -1184,7 +1184,7 @@ To process the user prompt ""Let's check out the Novelties store, and then head 
     }
   ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'Novelties', 'x': 50, 'y': 35}}, {'action': 'navigate', 'input': {'name': 'South Entrance', 'x': 100, 'y': 20}}]}",0.0,0.0,"['Novelties', 'South Entrance']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,All locations are present in the response
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'Novelties', 'x': 50, 'y': 35}}, {'action': 'navigate', 'input': {'name': 'South Entrance', 'x': 100, 'y': 20}}]}",0.0,0.0,"['Novelties', 'South Entrance']",Nav,,All locations are present in the response
 E7-1,3.0,21.0,"""Let's check out Novelties store, and then head out South Entrance.""","<think>
 Okay, so I'm trying to figure out how to handle the prompt ""Let's check out Novelties store, and then head out South Entrance."" First, I need to break this down. It seems like there are two main tasks mentioned: checking out Novelties store and heading out to South Entrance.
 
@@ -1230,7 +1230,7 @@ I need more information on the coordinates or names for each waypoint, especiall
 
 Also, I should ensure that the Southwest Foundation supports both ""navigate"" and ""speak"" functions in this context.
 
-If ""Microwaves"" is the correct action but it's not available here, then perhaps there's a miscommunication. It might be better to select ""Microwaves"" if applicable or default to an error message otherwise.","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Café', 'x': 0, 'y': 0}}, {'action': 'navigate', 'input': {'name': 'South Entrance', 'x': 0.0, 'y': 0.0}}]}",0.0,0.0,"['Novelties', 'South Entrance']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+If ""Microwaves"" is the correct action but it's not available here, then perhaps there's a miscommunication. It might be better to select ""Microwaves"" if applicable or default to an error message otherwise.","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Café', 'x': 0, 'y': 0}}, {'action': 'navigate', 'input': {'name': 'South Entrance', 'x': 0.0, 'y': 0.0}}]}",0.0,0.0,"['Novelties', 'South Entrance']",Nav,Expected location name: C&D - Café does not match with the provided location name: Novelties,
 E7-1,14.0,90.0,"""Robot, navigate to C&D - Hot Food Area and announce 'C&D Hot Food Area' clearly.""","<think>
 Okay, so I need to figure out how to help the user with their command. Let me break this down step by step.
 
@@ -1282,7 +1282,7 @@ So, my output should have two actions: one for navigating and another for speaki
       ""input"": ""C&D Hot Food Area""
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Hot Food Area', 'x': 100, 'y': 25}}, {'action': 'speak', 'input': 'C&D Hot Food Area'}]}",0.0,0.0,"['C&D - Hot Food', ('speak', 'C&D Hot Food Area')]",Nav + Action,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Hot Food Area', 'x': 100, 'y': 25}}, {'action': 'speak', 'input': 'C&D Hot Food Area'}]}",0.0,0.0,"['C&D - Hot Food', ('speak', 'C&D Hot Food Area')]",Nav + Action,Expected location name: C&D - Hot Food Area does not match with the provided location name: C&D - Hot Food,
 E7-1,7.0,48.0,"""Travel to the E5 Entrance and then find the Microwaves.""","<think>
 Okay, I need to help the user with their prompt. The task is to travel to the E5 Entrance and then find the Microwaves. Let's break this down step by step.
 
@@ -2451,7 +2451,7 @@ The output should be:
         }
     ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Coffee Area', 'x': 100, 'y': 100}}, {'action': 'wait', 'input': 15}]}",0.0,0.0,"['C&D - Hot Food Area', ('wait', 15, 'seconds')]",Nav + Action,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Coffee Area', 'x': 100, 'y': 100}}, {'action': 'wait', 'input': 15}]}",0.0,0.0,"['C&D - Hot Food Area', ('wait', 15, 'seconds')]",Nav + Action,Expected location name: C&D - Coffee Area does not match with the provided location name: C&D - Hot Food Area,
 E7-1,8.0,54.0,"""Take me to the E7 silent study.""","<think>
 Alright, so I need to figure out how to respond to the user's query. They've asked me to take them to the E7 silent study. First, I should check if there are any known waypoints that match this request.
 
@@ -2471,7 +2471,7 @@ Since this waypoint exists, I don't need to handle any ambiguous commands or fal
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 Silent Study'}}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 Silent Study'}}]}",0.0,0.0,['Silent Study'],Nav,Expected location name: E7 Silent Study does not match with the provided location name: Silent Study,
 E7-1,4.0,27.0,"""Take me to the Elevators. Wait their for 15 seconds, and then let's find the East Enterance.""","<think>
 Okay, I need to analyze this user prompt step by step. The user wants me to take them to the elevators, wait for 15 seconds there, and then let's find the East Enterance.
 
@@ -2581,7 +2581,7 @@ So putting it all together, the actions would involve two ""navigate"" commands:
             }
         }
     ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 0, 'y': 0}}, {'action': 'navigate', 'input': {'name': 'Micawaves', 'x': 100, 'y': 60}}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 0, 'y': 0}}, {'action': 'navigate', 'input': {'name': 'Micawaves', 'x': 100, 'y': 60}}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected location name: Micawaves does not match with the provided location name: Microwaves,
 E7-1,12.0,80.0,"""Navigate to the first floor staircase""","<think>
 Alright, I need to figure out how to respond to this user query. The user wants me to navigate to the first floor of a staircase. Let's break down what they're asking for.
 
@@ -2707,7 +2707,7 @@ The system should recognize ""C&D"" as a waypoint name and navigate to the corre
         }
     ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Coffee Area', 'x': 100, 'y': 100}}, {'action': 'wait', 'input': 10}]}",,,[],Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Coffee Area', 'x': 100, 'y': 100}}, {'action': 'wait', 'input': 10}]}",,,[],Nav,,
 E7-1,14.0,93.0,"""Robot, proceed to Elevators and say 'Elevators' to assist with navigation.""","<think>
 Alright, let's tackle this query. The user provided a detailed prompt about handling advanced fuzzy matching for waypoints and specific command processing. I need to extract the relevant information from the given data.
 
@@ -2958,7 +2958,7 @@ So putting it all together: I'll say ""navigate"" and provide the coordinates of
             }
         }
     ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 - Silent Study', 'x': 100, 'y': 50}}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 - Silent Study', 'x': 100, 'y': 50}}]}",0.0,0.0,['Silent Study'],Nav,Expected location name: E7 - Silent Study does not match with the provided location name: Silent Study,
 E7-1,1.0,12.0,"""Take me to the Elevators. Wait there for 15 seconds, and then let's find the East Entrance.""","<think>
 Alright, so I need to figure out how to handle this specific query about a command involving elevators and waiting. Let's break it down step by step.
 
@@ -3240,7 +3240,7 @@ I don't think there's any ambiguity in these steps since both waypoints are clea
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 90, 'y': 61}}, {'action': 'navigate', 'input': {'name': 'Microwaves', 'x': 232, 'y': 47}}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,All locations are present in the response
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 90, 'y': 61}}, {'action': 'navigate', 'input': {'name': 'Microwaves', 'x': 232, 'y': 47}}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,,All locations are present in the response
 E7-1,15.0,95.0,"""Robot, navigate to [[C&D - Hot Food Area]], announce 'C&D Hot Food Area' clearly, and wait until further instructions.""","<think>
 Alright, I'm looking at the user's prompt about navigating to the C&D Hot Food Area. They want me to output a list of actions with specific inputs. 
 
@@ -3341,7 +3341,7 @@ So I think it should be matched. Once I confirm that, I'll assign ""navigate"" a
             }
         }
     ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 Silent Study', 'x': 0.0, 'y': 0.0}}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 Silent Study', 'x': 0.0, 'y': 0.0}}]}",0.0,0.0,['Silent Study'],Nav,Expected location name: E7 Silent Study does not match with the provided location name: Silent Study,
 E7-1,11.0,74.0,"""Robot, begin at the North Entrance and proceed to the C&D - Main Entrance to check for any obstructions. Next, visit the Microwaves area and ensure all units are operational. After that, move to Silent Study and verify that the environment remains quiet. Then, navigate to Shower A and Shower B to inspect for cleanliness. Finally, head to the South Entrance and report back with your findings.""","<think>
 Okay, so I need to figure out how to respond to this user prompt using the provided waypoint list and functions. The prompt is pretty detailed and involves several waypoints in order. Let me break it down step by step.
 
@@ -3663,7 +3663,7 @@ Wait, but in the available functions, navigate is one of them. So just two actio
             }
         }
     ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Ideas Clinic', 'x': 100, 'y': 75}}, {'action': 'navigate', 'input': {'name': 'Assembly Rooms', 'x': 200, 'y': 80}}]}",0.0,0.0,"['Ideas Clinic', 'Assembly Room']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Ideas Clinic', 'x': 100, 'y': 75}}, {'action': 'navigate', 'input': {'name': 'Assembly Rooms', 'x': 200, 'y': 80}}]}",0.0,0.0,"['Ideas Clinic', 'Assembly Room']",Nav,Expected location name: Assembly Rooms does not match with the provided location name: Assembly Room,
 E7-1,14.0,90.0,"""Robot, navigate to C&D - Hot Food Area and announce 'C&D Hot Food Area' clearly.""","<think>
 Okay, so I'm trying to figure out how to handle this query. The user wants me to create a response based on their prompt which is about navigating to a waypoint called ""C&D - Hot Food Area"" and then announcing it clearly. Let's break this down step by step.
 
@@ -3701,7 +3701,7 @@ I think that's about it. The response should include two actions: navigate to th
         }
     ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Hot Food Area', 'x': 100, 'y': 100}}, {'action': 'speak', 'input': ""You've reached C&D - Hot Food Area, which seems quite loud.""}]}",0.0,0.0,"['C&D - Hot Food', ('speak', 'C&D Hot Food Area')]",Nav + Action,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Hot Food Area', 'x': 100, 'y': 100}}, {'action': 'speak', 'input': ""You've reached C&D - Hot Food Area, which seems quite loud.""}]}",0.0,0.0,"['C&D - Hot Food', ('speak', 'C&D Hot Food Area')]",Nav + Action,Expected location name: C&D - Hot Food Area does not match with the provided location name: C&D - Hot Food,
 E7-1,2.0,14.0,"""Go from nroth enterance to the Hub""","<think>
 Okay, so I'm trying to figure out how to respond to this user prompt. Let me break it down step by step.
 
@@ -4209,7 +4209,7 @@ Therefore, the actions list should consist of navigate commands for each specifi
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Snack Area', 'x': 100, 'y': 100}}, {'action': 'navigate', 'input': {'name': 'C&D - Cold Drink Area', 'x': 200, 'y': 150}}, {'action': 'navigate', 'input': {'name': 'C&D - Pastry Area', 'x': 150, 'y': 200}}, {'action': 'navigate', 'input': {'name': 'C&D - Coffee Area', 'x': 0, 'y': 300}}, {'action': 'navigate', 'input': {'name': 'C&D - Hot Food Area', 'x': 180, 'y': 250}}]}",0.0,0.0,"['C&D - Snack Area', 'C&D - Cold Drink Area', 'C&D - Pastry Area', 'C&D - Coffee Area', 'C&D - Hot Food Area']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,All locations are present in the response
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'C&D - Snack Area', 'x': 100, 'y': 100}}, {'action': 'navigate', 'input': {'name': 'C&D - Cold Drink Area', 'x': 200, 'y': 150}}, {'action': 'navigate', 'input': {'name': 'C&D - Pastry Area', 'x': 150, 'y': 200}}, {'action': 'navigate', 'input': {'name': 'C&D - Coffee Area', 'x': 0, 'y': 300}}, {'action': 'navigate', 'input': {'name': 'C&D - Hot Food Area', 'x': 180, 'y': 250}}]}",0.0,0.0,"['C&D - Snack Area', 'C&D - Cold Drink Area', 'C&D - Pastry Area', 'C&D - Coffee Area', 'C&D - Hot Food Area']",Nav,,All locations are present in the response
 E7-1,1.0,3.0,"""Travel to the E5 Entrance and then find the Microwaves.""","<think>
 Okay, so I need to figure out how to respond to this prompt. The user wants me to travel to the E5 Entrance and then find the Microwaves. Let's break it down step by step.
 
@@ -4245,7 +4245,7 @@ So, putting it all together: navigate to E5 Entrance first, then navigate to Mic
             }
         }
     ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 100, 'y': 68}}, {'action': 'navigate', 'input': {'name': 'Micawave'}}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 100, 'y': 68}}, {'action': 'navigate', 'input': {'name': 'Micawave'}}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected location name: Micawave does not match with the provided location name: Microwaves,
 E7-1,3.0,18.0,"""Go North Entrance and then proceed to C&D - Main Entrance.""","<think>
 Okay, so I need to figure out how to handle the prompt ""Go North Entrance and then proceed to C&D - Main Entrance."" The user provided some details about matching waypoint names using fuzzy logic. Let me break this down step by step.
 
@@ -4606,7 +4606,7 @@ So my response would be to navigate to E7silent study with coordinates 100,50. I
             }
         }
     ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7silent study', 'x': 100, 'y': 50}}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7silent study', 'x': 100, 'y': 50}}]}",0.0,0.0,['Silent Study'],Nav,Expected location name: E7silent study does not match with the provided location name: Silent Study,
 E7-1,7.0,44.0,"""Travel to the E5 Entrance and then find the Microwaves.""","<think>
 Okay, I need to figure out how to respond to this query. The user provided a detailed prompt about matching waypoints and executing actions based on that. Let me break it down step by step.
 
@@ -5146,7 +5146,7 @@ I should output actions as ""navigate"" with the respective coordinates for each
             ""y"": 60
         }
     }
-]}","{'actions': [{'action': 'navigate', 'input': {'name': 'North Entrance', 'x': 0.0, 'y': 50}}, {'action': 'navigate', 'input': {'name': 'C&D - Main Entrance', 'x': 100, 'y': 60}}]}",0.0,0.0,"['North Entrance', 'C&D - Main Entrance']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,All locations are present in the response
+]}","{'actions': [{'action': 'navigate', 'input': {'name': 'North Entrance', 'x': 0.0, 'y': 50}}, {'action': 'navigate', 'input': {'name': 'C&D - Main Entrance', 'x': 100, 'y': 60}}]}",0.0,0.0,"['North Entrance', 'C&D - Main Entrance']",Nav,,All locations are present in the response
 E7-1,10.0,70.0,"""I could really go for a shower.""","<think>
 Okay, so I need to figure out how to handle this user prompt. Let me break it down step by step.
 
@@ -5411,7 +5411,7 @@ I think I'll structure it so that after moving to E5 Entrance, the user is promp
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 100, 'y': 616}}, {'action': 'navigate', 'input': {'name': 'Room 3456 - Microwaves', 'x': 200, 'y': 789}}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 100, 'y': 616}}, {'action': 'navigate', 'input': {'name': 'Room 3456 - Microwaves', 'x': 200, 'y': 789}}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected location name: Room 3456 - Microwaves does not match with the provided location name: Microwaves,
 E7-1,1.0,11.0,"""It's too loud here! Let's go to the Silent Study, and then afterwards, we can check out the RoboHub.""","<think>
 Okay, so I'm trying to figure out how to handle this query about coordinating activities based on waypoints. The user provided a specific prompt that mentions handling complex commands, but in their example, they just mentioned coordinating a set of waypoints without any actions beyond navigation or wait.
 
@@ -5915,7 +5915,7 @@ I don't think any of the other waypoints in the list would match because they ei
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 Silent Study', 'x': 0, 'y': 0}}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 Silent Study', 'x': 0, 'y': 0}}]}",0.0,0.0,['Silent Study'],Nav,Expected location name: E7 Silent Study does not match with the provided location name: Silent Study,
 E7-1,12.0,81.0,"""Go to the c&d and ask for a coffee then go to the design team bay""","<think>
 Okay, so I need to figure out how to respond when the user says, ""Go to the c&D and ask for a coffee then go to the design team bay."" Let's break this down step by step.
 
@@ -6185,7 +6185,7 @@ Wait, did I cover all possibilities? The user just wants me there, so no additio
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 silent study room', 'x': 25, 'y': 75}}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 silent study room', 'x': 25, 'y': 75}}]}",0.0,0.0,['Silent Study'],Nav,Expected location name: E7 silent study room does not match with the provided location name: Silent Study,
 E7-1,13.0,87.0,"""Robot, go to Temporary Booth and wait for 30 minutes.""","<think>
 Alright, let me figure out how to handle this query. The user has given a list of waypoints with their descriptions and available functions like navigate, speak, and wait. They also have some examples of prompts and responses.
 
@@ -6324,7 +6324,7 @@ Therefore, the response should be straightforward—navigate to E7 Silent Study 
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 - Silent Study', 'x': 100, 'y': 100}}]}",2069.0,1199.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 - Silent Study', 'x': 100, 'y': 100}}]}",2069.0,1199.0,['Silent Study'],Nav,Expected location name: E7 - Silent Study does not match with the provided location name: Silent Study,
 E7-1,5.0,28.0,"""Honestly, I don't like coffee. go to the robohub""","<think>
 Okay, so the user sent this prompt: ""Honestly, I don't like coffee. go to the robohub"". Let me try to figure out what they need.
 
@@ -6428,7 +6428,7 @@ I think that's solid. So the final actions would be navigating to E5 Entrance an
       ""input"": ""Invalid command: 'Microwaves' is not recognized""
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 100, 'y': 616}}, {'action': 'speak', 'input': ""Invalid command: 'Microwaves' is not recognized""}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 100, 'y': 616}}, {'action': 'speak', 'input': ""Invalid command: 'Microwaves' is not recognized""}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected Response Error: Expected Response Type is not correct for action object 1,
 E7-1,3.0,21.0,"""Let's check out Novelties store, and then head out South Entrance.""","<think>
 Alright, I'm trying to figure out how to handle the prompt where the user says, ""Let's check out Novelties store, and then head out South Entrance."" Hmm, okay. So first, I need to break down what this means.
 
@@ -6531,7 +6531,7 @@ So yes, I think that's correct. Just outputting ""navigate"" with the correspond
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 silent study'}}]}",0.0,0.0,['Silent Study'],Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'E7 silent study'}}]}",0.0,0.0,['Silent Study'],Nav,Expected location name: E7 silent study does not match with the provided location name: Silent Study,
 E7-1,14.0,89.0,"""Robot, proceed to North Entrance and say 'North Entrance' out loud.""","<think>
 Okay, let's try to figure out how to approach this problem. The user provided a detailed prompt about handling commands with waypoints and various functions like Navigate, speak, and wait. They also gave examples of how the output should look.
 
@@ -6686,7 +6686,7 @@ Putting it all together, the actions would involve navigating into the zone and 
             ""input"": ""308-679-672""
         }
     ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'E and 215 - Room 7421 - Idea Lab', 'x': 100, 'y': 80}}, {'action': 'speak', 'input': '308-679-672'}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'E and 215 - Room 7421 - Idea Lab', 'x': 100, 'y': 80}}, {'action': 'speak', 'input': '308-679-672'}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected location name: E and 215 - Room 7421 - Idea Lab does not match with the provided location name: E5 Entrance,
 E7-1,7.0,53.0,"""Travel to the E5 Entrance and then find the Microwaves.""","<think>
 Okay, so I need to figure out how to respond to this user's prompt. Let me break it down step by step.
 
@@ -6731,7 +6731,7 @@ So, putting it all together, the response will list both navigate commands in or
             }
         }
     ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 90, 'y': 61}}, {'action': 'navigate', 'input': {'name': 'Microwaves', 'x': 478, 'y': 32}}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,All locations are present in the response
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'E5 Entrance', 'x': 90, 'y': 61}}, {'action': 'navigate', 'input': {'name': 'Microwaves', 'x': 478, 'y': 32}}]}",0.0,0.0,"['E5 Entrance', 'Microwaves']",Nav,,All locations are present in the response
 E7-1,1.0,9.0,"""We're at the Assembly Room now. Let's head back to the Ideas Clinic.""","<think>
 Okay, I'm looking at the user prompt they provided: ""We're at the Assembly Room now. Let's head back to the Ideas Clinic."" My job is to process this using the given fuzzy matching system and handle it step by step.
 
@@ -7386,7 +7386,7 @@ Now, putting it all together, the response will include two actions: one for mov
             }
         }
     ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'RoboHub', 'x': 25, 'y': 50}}, {'action': 'navigate', 'input': {'name': 'Silent Study', 'x': 18, 'y': 75}}]}",0.0,0.0,"['RoboHub', 'Silent Study']",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,All locations are present in the response
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'RoboHub', 'x': 25, 'y': 50}}, {'action': 'navigate', 'input': {'name': 'Silent Study', 'x': 18, 'y': 75}}]}",0.0,0.0,"['RoboHub', 'Silent Study']",Nav,,All locations are present in the response
 E7-1,15.0,94.0,"""Robot, proceed to [[North Entrance]], say 'North Entrance' out loud, and wait for 10 minutes.""","<think>
 Okay, so the user gave me this prompt about sending a robot to go to the North Entrance. I need to figure out how to respond using the tools provided.
 
@@ -7425,7 +7425,7 @@ The user's prompt requires a command that sends a robot to the North Entrance. B
         }
     ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'N&D - North Entrance', 'x': 25, 'y': 50}}, {'action': 'speak', 'input': 'North Entrance'}, {'action': 'wait', 'input': 10}]}",0.0,0.0,"['North Entrance', ('speak', 'North Entrance'), ('wait', 10, 'minutes')]",Nav + Action,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'N&D - North Entrance', 'x': 25, 'y': 50}}, {'action': 'speak', 'input': 'North Entrance'}, {'action': 'wait', 'input': 10}]}",0.0,0.0,"['North Entrance', ('speak', 'North Entrance'), ('wait', 10, 'minutes')]",Nav + Action,Expected location name: N&D - North Entrance does not match with the provided location name: North Entrance,
 E7-1,1.0,8.0,"""I'm feeling peckish. Can we swing by the C&D - Snack Area and then grab a drink at the C&D - Cold Drink Area?""","<think>
 Okay, so I need to help someone with this role. Let's see what the user is asking for.
 

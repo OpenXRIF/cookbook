@@ -1,0 +1,14 @@
+---
+prompt_template: "prompts/warehouse_actions_1.yaml"
+waypoints_csv: "waypoint_datasets/warehouse_waypoints.csv"
+language_model_type: "OpenAI"
+embed_model_type: "HuggingFace"
+language_model: "gpt-4o-mini"
+embed_model: "sentence-transformers/all-MiniLM-L6-v2"
+fetch_all: True
+chat_kwargs: 
+   max_tokens : 500
+   temperature : 0.2
+   top_p : 0.2
+output_folder: "gpt4o_mini_warehouse_hgf_embed"
+test_dataset: "test_datasets/warehouse_tests.csv"

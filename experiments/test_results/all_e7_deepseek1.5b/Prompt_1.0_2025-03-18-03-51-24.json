@@ -29,5 +29,5 @@
     "Expected Response": "['North Entrance', 'C&D - Main Entrance']",
     "Expected Response Type": "Nav",
     "Notes": "All locations are present in the response",
-    "Error Message": "Expected Response Error: Expected Response Type is not 'Nav' for action object 0"
+    "Error Message": ""
 }

@@ -23,5 +23,6 @@
     "Starting X": 0.0,
     "Starting Y": 0.0,
     "Expected Response": "['North Entrance', 'C&D - Main Entrance', 'Microwaves', 'Silent Study', 'Shower A', 'Shower B', 'South Entrance']",
-    "Expected Response Type": "Nav"
+    "Expected Response Type": "Nav",
+    "Error Message": ""
 }

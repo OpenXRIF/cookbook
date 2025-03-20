@@ -58,7 +58,7 @@ WH,8,Action,56,"""Can you check out part B-08-199, tell everyone someone there t
 WH,8,Action,57,"""Can you check out part B-08-199's inventory and come back and let me know?""",0,0,"['B-08-199', 'Speak', 'Start Point']",Nav + Action,,,,
 WH,8,Action,58,"""What are all the aluminum fastners we have?""",0,0,['Speak'],Nav + Action,,,,
 WH,8,Action,59,"""Go tell the Castrol oil guy that LiquiMoly is so much better.""",0,0,"['C-07-057', 'Speak']",Nav + Action,,,,
-WH,8,Action,60,"""Go tell the LiuiMoly guy that Castrol is so much better.""",0,0,"['C-09-032', 'Speak']",Nav + Action,,,,
+WH,8,Action,60,"""Go tell the LiquiMoly guy that Castrol is so much better.""",0,0,"['C-09-032', 'Speak']",Nav + Action,,,,
 WH,,,,,,,,,,,,
 WH,,,,,,,,,,,,
 WH,,,,,,,,,,,,

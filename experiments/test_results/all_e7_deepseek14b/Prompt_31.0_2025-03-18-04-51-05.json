@@ -13,5 +13,6 @@
     "Starting X": NaN,
     "Starting Y": NaN,
     "Expected Response": "[]",
-    "Expected Response Type": "Nav"
+    "Expected Response Type": "Nav",
+    "Error Message": ""
 }

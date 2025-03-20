@@ -15,5 +15,6 @@
     "Starting X": 0.0,
     "Starting Y": 0.0,
     "Expected Response": "['Silent Study', 'RoboHub']",
-    "Expected Response Type": "Nav"
+    "Expected Response Type": "Nav",
+    "Error Message": ""
 }

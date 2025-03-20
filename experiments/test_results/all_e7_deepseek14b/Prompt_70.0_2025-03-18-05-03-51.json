@@ -11,5 +11,6 @@
     "Starting X": 951.0,
     "Starting Y": 616.0,
     "Expected Response": "['Shower A']",
-    "Expected Response Type": "Nav"
+    "Expected Response Type": "Nav",
+    "Error Message": ""
 }

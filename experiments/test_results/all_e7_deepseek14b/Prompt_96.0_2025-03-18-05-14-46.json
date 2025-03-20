@@ -15,5 +15,6 @@
     "Starting X": 0.0,
     "Starting Y": 0.0,
     "Expected Response": "['Silent Study', ('speak', 'Silent Study'), ('wait', 15, 'minutes')]",
-    "Expected Response Type": "Nav + Action"
+    "Expected Response Type": "Nav + Action",
+    "Error Message": ""
 }

@@ -28,5 +28,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['Ideas Clinic', 'Assembly Room']",
     "Expected Response Type": "Nav",
-    "Error Message": "Expected Response Error: Expected Response Type is not 'Nav' for action object 0"
+    "Error Message": "Expected location name: C&D - Assembly Room does not match with the provided location name: Assembly Room"
 }

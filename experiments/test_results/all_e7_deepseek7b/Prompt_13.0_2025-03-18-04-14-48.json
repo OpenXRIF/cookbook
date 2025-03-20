@@ -20,5 +20,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['RoboHub']",
     "Expected Response Type": "Nav",
-    "Error Message": "Expected Response Error: Expected Response Type is not 'Nav' for action object 0"
+    "Error Message": "Expected location name: HubRobo - Hub Complex Area does not match with the provided location name: RoboHub"
 }

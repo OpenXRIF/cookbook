@@ -5,7 +5,7 @@ import os
 
 OUTPUT_DIR = Path("test_results")
 # output_folder = 'eval_test'
-# eval_json_path ='test_results/all_e7_deepseek7b/Prompt_5.0_2025-03-18-04-11-35.json'
+# eval_json_path ='test_results/all_e7_deepseek7b/Prompt_92.0_2025-03-18-04-33-26.json'
 # eval_json = None
 
 def eval_xrif(eval_json: dict, xrif_gen: dict, xrif_ex: list, response_type):
@@ -26,13 +26,13 @@ def eval_xrif(eval_json: dict, xrif_gen: dict, xrif_ex: list, response_type):
                 for i in range(len(xrif_gen['actions'])):
                     if 'action' in actions[i]:
                         if actions[i]['action'] == 'navigate' :
-                            if type(xrif_ex[i]) == 'str':
+                            if type(xrif_ex[i]) is str:
                                 if 'input' in actions[i]:
                                     if 'name' in actions[i]['input'].keys():
                                         if actions[i]['input']['name'] == xrif_ex[i] or (type(xrif_ex[i]) == 'list' and actions[i]['input']['name'] in xrif_ex[i]):
                                             continue
                                         else:
-                                            error_message = f"Expected location name: {actions[i]['name']} does not match with the provided location name: {xrif_ex[i]}"
+                                            error_message = f"Expected location name: {actions[i]['input']['name']} does not match with the provided location name: {xrif_ex[i]}"
                                             dump_json['Error Message'] = error_message
                                             break
                                     else:
@@ -48,7 +48,7 @@ def eval_xrif(eval_json: dict, xrif_gen: dict, xrif_ex: list, response_type):
                                 dump_json['Error Message'] = error_message
                                 break
                         elif actions[i]['action'] == 'wait':
-                            if type(xrif_ex[i]) == 'tuple':
+                            if type(xrif_ex[i]) is tuple:
                                 if 'input' in actions[i]:
                                         if actions[i]['action'] != xrif_ex[i][0]:
                                             error_message = f"Expected action at action object {i} : {xrif_ex[i][0]}  does not match with the provided action: {actions[i]['action']}"
@@ -68,7 +68,7 @@ def eval_xrif(eval_json: dict, xrif_gen: dict, xrif_ex: list, response_type):
                                 dump_json['Error Message'] = error_message
                                 break
                         elif actions[i]['action'] == 'speak':
-                            if type(xrif_ex[i]) == 'tuple':
+                            if type(xrif_ex[i]) is tuple:
                                 if ('action' in actions[i]) and ('input' in actions[i]):
                                     if actions[i]['action'] == xrif_ex[i][0] and (actions[i]['input'] == xrif_ex[i][1] or (type(xrif_ex[i]) == 'list' and actions[i]['input'] in xrif_ex[i])):
                                         continue
@@ -91,10 +91,17 @@ def eval_xrif(eval_json: dict, xrif_gen: dict, xrif_ex: list, response_type):
     else:
         error_message = "XRIF response is Invalid"
         dump_json['Error Message'] = error_message
-    
+    if not error_message:
+        dump_json['Error Message'] = ""
     return dump_json
 
+# with open(eval_json_path, 'r') as f:
+#     eval_json = json.load(f)
+# expected_response = ast.literal_eval(eval_json['Expected Response'])
+# dump = eval_xrif(eval_json, eval_json["XRIF Generated"], expected_response, 'Nav')
 
+# with open(OUTPUT_DIR / Path(output_folder) / 'eval.json', 'w') as file:
+#     json.dump(dump, file, indent=4)
 
 for folder in os.listdir(OUTPUT_DIR):
     if Path(OUTPUT_DIR / folder).is_dir():

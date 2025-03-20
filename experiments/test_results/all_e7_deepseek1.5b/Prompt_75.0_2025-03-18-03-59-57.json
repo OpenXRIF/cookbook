@@ -63,5 +63,6 @@
     "Starting X": 0.0,
     "Starting Y": 0.0,
     "Expected Response": "['C&D - Hot Food Area', 'RoboHub', 'Ideas Clinic', 'Assembly Room', 'C&D - Coffee Area']",
-    "Expected Response Type": "Nav"
+    "Expected Response Type": "Nav",
+    "Error Message": ""
 }

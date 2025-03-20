@@ -23,5 +23,6 @@
     "Starting X": 0.0,
     "Starting Y": 0.0,
     "Expected Response": "['C&D - Main Entrance']",
-    "Expected Response Type": "Nav"
+    "Expected Response Type": "Nav",
+    "Error Message": ""
 }

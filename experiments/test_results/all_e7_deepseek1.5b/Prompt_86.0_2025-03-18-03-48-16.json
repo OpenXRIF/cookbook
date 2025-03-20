@@ -24,5 +24,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['C&D - Hot Food Area', ('wait', 15, 'seconds')]",
     "Expected Response Type": "Nav + Action",
-    "Error Message": "Expected Response Error: Expected Response Type is not 'Nav' for action object 0"
+    "Error Message": "Expected location name: C&D - Coffee Area does not match with the provided location name: C&D - Hot Food Area"
 }
