@@ -27,5 +27,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['Wash Bay', ('speak', 'Get out.')]",
     "Expected Response Type": "Nav + Action",
-    "Error Message": ""
+    "Error Message": "Expected speak message: ('speak', 'Get out.') does not match with the generated speak message: Please get out or Expected action: speak does not match with the generated action: speak"
 }

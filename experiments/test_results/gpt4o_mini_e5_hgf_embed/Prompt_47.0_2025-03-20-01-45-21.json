@@ -27,5 +27,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['Rocketry', ('wait', 5, 'minutes')]",
     "Expected Response Type": "Nav + Action",
-    "Error Message": ""
+    "Error Message": "Expected wait time: 300 does not match with the provided wait time: 5"
 }

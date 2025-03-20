@@ -23,5 +23,5 @@
     "Starting Y": 0.0,
     "Expected Response": "[['UWFE - Mech Bay','UWFE - Electrical Bay','UWAFT - Workbay','UWAFT - Office','Baja','Midnight Sun']]",
     "Expected Response Type": "Nav",
-    "Error Message": ""
+    "Error Message": "Expected Response Error: Expected Response Type is not 'Nav' for action object 0"
 }

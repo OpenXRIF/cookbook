@@ -27,5 +27,5 @@
     "Starting Y": 0.0,
     "Expected Response": "[]",
     "Expected Response Type": NaN,
-    "Error Message": "Expected location name: Elevators does not match with the provided location name: ["
+    "Error Message": ""
 }

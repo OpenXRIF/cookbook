@@ -19,5 +19,5 @@
     "Starting Y": 0.0,
     "Expected Response": "[('speak', 'WhatDig')]",
     "Expected Response Type": "Action",
-    "Error Message": ""
+    "Error Message": "Expected speak message: ('speak', 'WhatDig') does not match with the generated speak message: This waypoint does not exist or Expected action: speak does not match with the generated action: speak"
 }

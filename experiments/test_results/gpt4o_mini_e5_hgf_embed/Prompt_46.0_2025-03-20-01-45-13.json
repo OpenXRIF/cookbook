@@ -27,5 +27,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['Baja', ('speak', 'Give Zach his powerdrill back')]",
     "Expected Response Type": "Nav + Action",
-    "Error Message": ""
+    "Error Message": "Expected speak message: ('speak', 'Give Zach his powerdrill back') does not match with the generated speak message: Can you please give Zach his powerdrill back? or Expected action: speak does not match with the generated action: speak"
 }

@@ -23,5 +23,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['Waterloop']",
     "Expected Response Type": "Nav",
-    "Error Message": ""
+    "Error Message": "Expected location name: UWFE - Electrical Bay does not match with the provided location name: Waterloop"
 }

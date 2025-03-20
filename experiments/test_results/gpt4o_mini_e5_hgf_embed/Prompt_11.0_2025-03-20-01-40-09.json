@@ -23,5 +23,6 @@
     "Starting Y": 0.0,
     "Expected Response": "['Open Area']",
     "Expected Response Type": "Nav",
-    "Error Message": ""
+    "Error Message": "",
+    "Notes": "All locations are present in the response"
 }

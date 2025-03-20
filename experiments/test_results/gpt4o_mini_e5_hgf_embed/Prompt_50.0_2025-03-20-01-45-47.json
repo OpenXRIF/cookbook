@@ -27,5 +27,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['Paint Room', ('speak', 'Clean up')]",
     "Expected Response Type": "Nav + Action",
-    "Error Message": ""
+    "Error Message": "Expected speak message: ('speak', 'Clean up') does not match with the generated speak message: Please clean up. or Expected action: speak does not match with the generated action: speak"
 }

@@ -19,10 +19,13 @@ def eval_xrif(eval_json: dict, xrif_gen: dict, xrif_ex: list, response_type):
                 if response_type == 'Nav':
                     list_of_locations = [action['input']['name'] for action in actions if ('action' in action and action['action'] == 'navigate') and ('input' in action) and ('name' in action['input'])]
                     set_of_locations = set(list_of_locations)
-                    set_of_expected_locations = set(xrif_ex)
-                    if set_of_locations == set_of_expected_locations:
-                        note = "All locations are present in the response"
-                        dump_json['Notes'] = note
+                    try:
+                        set_of_expected_locations = set(xrif_ex)
+                        if set_of_locations == set_of_expected_locations:
+                            note = "All locations are present in the response"
+                            dump_json['Notes'] = note
+                    except:
+                        print('List of List')
                 for i in range(len(xrif_gen['actions'])):
                     if 'action' in actions[i]:
                         if actions[i]['action'] == 'navigate' :
