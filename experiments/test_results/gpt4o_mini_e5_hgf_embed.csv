@@ -1,4 +1,4 @@
-rendered_prompt,Waypoints Injected,num_waypoints_injected,Data Set,Experiment ID,Prompt ID,Prompt,Full LLM Response,XRIF Generated,Starting X,Starting Y,Expected Response,Expected Response Type,Error Message
+rendered_prompt,Waypoints Injected,num_waypoints_injected,Data Set,Experiment ID,Prompt ID,Prompt,Full LLM Response,XRIF Generated,Starting X,Starting Y,Expected Response,Expected Response Type,Error Message,Notes
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -217,7 +217,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[],,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[],,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -434,7 +434,7 @@ A waypoint called E7 Entrance exists at X-Coordinate, 1821, and Y-Coordinate, 50
       ""input"": ""The Machine Shop Entrance is located at coordinates (2261, 883) in Section 1101D.""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'The Machine Shop Entrance is located at coordinates (2261, 883) in Section 1101D.'}]}",0.0,0.0,['Machine Shop Entrance'],Nav,
+}","{'actions': [{'action': 'speak', 'input': 'The Machine Shop Entrance is located at coordinates (2261, 883) in Section 1101D.'}]}",0.0,0.0,['Machine Shop Entrance'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -651,7 +651,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['WARG'],Nav,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['WARG'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -916,7 +916,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Electrical Bay', 'x': 1293, 'y': 827}}, {'action': 'navigate', 'input': {'name': 'UWFE - Mech Bay', 'x': 2593, 'y': 527}}, {'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}, {'action': 'navigate', 'input': {'name': 'Rocketry', 'x': 1187, 'y': 691}}, {'action': 'navigate', 'input': {'name': 'Midnight Sun', 'x': 1735, 'y': 727}}, {'action': 'wait', 'input': 300}, {'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}]}",0.0,0.0,"['UWFE - Electrical Bay', 'UWFE - Mech Bay', 'Baja', 'Midnight Sun', ('wait, 5, 'minutes'), 'Baja']",Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Electrical Bay', 'x': 1293, 'y': 827}}, {'action': 'navigate', 'input': {'name': 'UWFE - Mech Bay', 'x': 2593, 'y': 527}}, {'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}, {'action': 'navigate', 'input': {'name': 'Rocketry', 'x': 1187, 'y': 691}}, {'action': 'navigate', 'input': {'name': 'Midnight Sun', 'x': 1735, 'y': 727}}, {'action': 'wait', 'input': 300}, {'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}]}",0.0,0.0,"['UWFE - Electrical Bay', 'UWFE - Mech Bay', 'Baja', 'Midnight Sun', ('wait, 5, 'minutes'), 'Baja']",Nav,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -1133,7 +1133,7 @@ A waypoint called UWAFT - Workbay exists at X-Coordinate, 2611, and Y-Coordinate
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[],,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[],,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -1350,7 +1350,7 @@ A waypoint called E7 South Entrance exists at X-Coordinate, 2597, and Y-Coordina
       ""input"": ""The Welding Room is located at coordinates (2413, 423).""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'The Welding Room is located at coordinates (2413, 423).'}]}",0.0,0.0,['Welding Room'],Nav,
+}","{'actions': [{'action': 'speak', 'input': 'The Welding Room is located at coordinates (2413, 423).'}]}",0.0,0.0,['Welding Room'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -1567,7 +1567,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[],,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[],,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -1790,7 +1790,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
     }
   ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Mech Bay', 'x': 2593, 'y': 527}}]}",0.0,0.0,"[['UWFE - Mech Bay','UWFE - Electrical Bay']]",Nav,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Mech Bay', 'x': 2593, 'y': 527}}]}",0.0,0.0,"[['UWFE - Mech Bay','UWFE - Electrical Bay']]",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -2011,7 +2011,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWAFT - Office', 'x': 1035, 'y': 693}}]}",0.0,0.0,['UWAFT - Office'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWAFT - Office', 'x': 1035, 'y': 693}}]}",0.0,0.0,['UWAFT - Office'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -2228,7 +2228,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[('speak', 'WhatDig')]",Action,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[('speak', 'WhatDig')]",Action,"Expected speak message: ('speak', 'WhatDig') does not match with the generated speak message: This waypoint does not exist or Expected action: speak does not match with the generated action: speak",
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -2449,7 +2449,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Concrete Canoe', 'x': 1497, 'y': 691}}]}",0.0,0.0,['Concrete Canoe'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Concrete Canoe', 'x': 1497, 'y': 691}}]}",0.0,0.0,['Concrete Canoe'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -2706,7 +2706,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Electrical Bay', 'x': 1293, 'y': 827}}, {'action': 'navigate', 'input': {'name': 'UWFE - Mech Bay', 'x': 2593, 'y': 527}}, {'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}, {'action': 'navigate', 'input': {'name': 'Midnight Sun', 'x': 1735, 'y': 727}}, {'action': 'wait', 'input': 300}, {'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}]}",0.0,0.0,"['UWFE - Mech Bay', 'Baja', 'Rocketry', 'Midnight Sun', ('wait, 5, 'minutes'), 'Baja']",Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Electrical Bay', 'x': 1293, 'y': 827}}, {'action': 'navigate', 'input': {'name': 'UWFE - Mech Bay', 'x': 2593, 'y': 527}}, {'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}, {'action': 'navigate', 'input': {'name': 'Midnight Sun', 'x': 1735, 'y': 727}}, {'action': 'wait', 'input': 300}, {'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}]}",0.0,0.0,"['UWFE - Mech Bay', 'Baja', 'Rocketry', 'Midnight Sun', ('wait, 5, 'minutes'), 'Baja']",Nav,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -2927,7 +2927,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Electrical Bay', 'x': 1293, 'y': 827}}]}",0.0,0.0,"[['UWFE - Mech Bay','UWFE - Electrical Bay']]",Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Electrical Bay', 'x': 1293, 'y': 827}}]}",0.0,0.0,"[['UWFE - Mech Bay','UWFE - Electrical Bay']]",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -3148,7 +3148,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Concrete Tobbagan', 'x': 1497, 'y': 691}}]}",0.0,0.0,['Concrete Tobbagan'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Concrete Tobbagan', 'x': 1497, 'y': 691}}]}",0.0,0.0,['Concrete Tobbagan'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -3369,7 +3369,7 @@ A waypoint called UWAFT - Workbay exists at X-Coordinate, 2611, and Y-Coordinate
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': ""Men's Washroom"", 'x': 2045, 'y': 709}}]}",0.0,0.0,"[['Men's Washroom','Women's Washroom']]",Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': ""Men's Washroom"", 'x': 2045, 'y': 709}}]}",0.0,0.0,"[['Men's Washroom','Women's Washroom']]",Nav,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -3590,7 +3590,7 @@ A waypoint called UWAFT - Workbay exists at X-Coordinate, 2611, and Y-Coordinate
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Anechoic Chamber', 'x': 797, 'y': 431}}]}",0.0,0.0,['Anechoic Chamber'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Anechoic Chamber', 'x': 797, 'y': 431}}]}",0.0,0.0,['Anechoic Chamber'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -3815,7 +3815,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       ""input"": ""Can you please give Zach his powerdrill back?""
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}, {'action': 'speak', 'input': 'Can you please give Zach his powerdrill back?'}]}",0.0,0.0,"['Baja', ('speak', 'Give Zach his powerdrill back')]",Nav + Action,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}, {'action': 'speak', 'input': 'Can you please give Zach his powerdrill back?'}]}",0.0,0.0,"['Baja', ('speak', 'Give Zach his powerdrill back')]",Nav + Action,"Expected speak message: ('speak', 'Give Zach his powerdrill back') does not match with the generated speak message: Can you please give Zach his powerdrill back? or Expected action: speak does not match with the generated action: speak",
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -4032,7 +4032,7 @@ A waypoint called UWAFT - Workbay exists at X-Coordinate, 2611, and Y-Coordinate
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[],,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[],,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -4257,7 +4257,7 @@ A waypoint called UWAFT - Workbay exists at X-Coordinate, 2611, and Y-Coordinate
       ""input"": ""North Entrance""
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'North Entrance', 'x': 617, 'y': 741}}, {'action': 'speak', 'input': 'North Entrance'}]}",0.0,0.0,[],,Expected location name: North Entrance does not match with the provided location name: [
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'North Entrance', 'x': 617, 'y': 741}}, {'action': 'speak', 'input': 'North Entrance'}]}",0.0,0.0,[],,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -4474,7 +4474,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[('speak', 'Robotics')]",Action,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[('speak', 'Robotics')]",Action,"Expected speak message: ('speak', 'Robotics') does not match with the generated speak message: This waypoint does not exist or Expected action: speak does not match with the generated action: speak",
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -4691,7 +4691,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[('speak', 'Baja')]",Action,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[('speak', 'Baja')]",Action,"Expected speak message: ('speak', 'Baja') does not match with the generated speak message: This waypoint does not exist or Expected action: speak does not match with the generated action: speak",
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -4908,7 +4908,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       ""input"": ""The best team for racing is the UWFE - Mech Bay.""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'The best team for racing is the UWFE - Mech Bay.'}]}",0.0,0.0,"[('speak', 'UWFE')]",Action,
+}","{'actions': [{'action': 'speak', 'input': 'The best team for racing is the UWFE - Mech Bay.'}]}",0.0,0.0,"[('speak', 'UWFE')]",Action,"Expected speak message: ('speak', 'UWFE') does not match with the generated speak message: The best team for racing is the UWFE - Mech Bay. or Expected action: speak does not match with the generated action: speak",
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -5133,7 +5133,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       ""input"": 900
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'North Entrance', 'x': 617, 'y': 741}}, {'action': 'wait', 'input': 900}]}",0.0,0.0,[],,Expected location name: North Entrance does not match with the provided location name: [
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'North Entrance', 'x': 617, 'y': 741}}, {'action': 'wait', 'input': 900}]}",0.0,0.0,[],,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -5350,7 +5350,7 @@ A waypoint called UWAFT - Workbay exists at X-Coordinate, 2611, and Y-Coordinate
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[],,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[],,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -5575,7 +5575,7 @@ A waypoint called Concrete Tobbagan exists at X-Coordinate, 1497, and Y-Coordina
       ""input"": ""Please get out""
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Wash Bay', 'x': 2683, 'y': 933}}, {'action': 'speak', 'input': 'Please get out'}]}",0.0,0.0,"['Wash Bay', ('speak', 'Get out.')]",Nav + Action,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Wash Bay', 'x': 2683, 'y': 933}}, {'action': 'speak', 'input': 'Please get out'}]}",0.0,0.0,"['Wash Bay', ('speak', 'Get out.')]",Nav + Action,"Expected speak message: ('speak', 'Get out.') does not match with the generated speak message: Please get out or Expected action: speak does not match with the generated action: speak",
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -5796,7 +5796,7 @@ A waypoint called E7 Entrance exists at X-Coordinate, 1821, and Y-Coordinate, 50
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Wash Bay', 'x': 2683, 'y': 933}}]}",0.0,0.0,['Wash Bay'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Wash Bay', 'x': 2683, 'y': 933}}]}",0.0,0.0,['Wash Bay'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -6017,7 +6017,7 @@ A waypoint called UWAFT - Workbay exists at X-Coordinate, 2611, and Y-Coordinate
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Machine Shop Instructor Room', 'x': 2257, 'y': 355}}]}",0.0,0.0,['Machine Shop Instructor Room'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Machine Shop Instructor Room', 'x': 2257, 'y': 355}}]}",0.0,0.0,['Machine Shop Instructor Room'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -6238,7 +6238,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWAFT - Workbay', 'x': 2611, 'y': 699}}]}",0.0,0.0,['UWAFT - Workbay'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWAFT - Workbay', 'x': 2611, 'y': 699}}]}",0.0,0.0,['UWAFT - Workbay'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -6461,7 +6461,7 @@ A waypoint called Men's Washroom exists at X-Coordinate, 2045, and Y-Coordinate,
     }
   ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}]}",0.0,0.0,['Baja'],Nav,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}]}",0.0,0.0,['Baja'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -6682,7 +6682,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Electrical Bay', 'x': 1293, 'y': 827}}]}",0.0,0.0,['UWFE - Electrical Bay'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Electrical Bay', 'x': 1293, 'y': 827}}]}",0.0,0.0,['UWFE - Electrical Bay'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -6899,7 +6899,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[('speak', 'Robotics')]",Action,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[('speak', 'Robotics')]",Action,"Expected speak message: ('speak', 'Robotics') does not match with the generated speak message: This waypoint does not exist or Expected action: speak does not match with the generated action: speak",
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -7120,7 +7120,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Waterloop', 'x': 991, 'y': 827}}]}",0.0,0.0,['Waterloop'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Waterloop', 'x': 991, 'y': 827}}]}",0.0,0.0,['Waterloop'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -7369,7 +7369,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       ""input"": 300
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Mech Bay', 'x': 2593, 'y': 527}}, {'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}, {'action': 'navigate', 'input': {'name': 'Rocketry', 'x': 1187, 'y': 691}}, {'action': 'navigate', 'input': {'name': 'Midnight Sun', 'x': 1735, 'y': 727}}, {'action': 'wait', 'input': 300}]}",0.0,0.0,"['UWFE - Electrical Bay', 'UWFE - Mech Bay', 'Baja', 'Rocketry', 'Midnight Sun', ('wait, 5, 'minutes')]",Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Mech Bay', 'x': 2593, 'y': 527}}, {'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}, {'action': 'navigate', 'input': {'name': 'Rocketry', 'x': 1187, 'y': 691}}, {'action': 'navigate', 'input': {'name': 'Midnight Sun', 'x': 1735, 'y': 727}}, {'action': 'wait', 'input': 300}]}",0.0,0.0,"['UWFE - Electrical Bay', 'UWFE - Mech Bay', 'Baja', 'Rocketry', 'Midnight Sun', ('wait, 5, 'minutes')]",Nav,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -7590,7 +7590,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWAFT - Workbay', 'x': 2611, 'y': 699}}]}",0.0,0.0,['UWAFT - Workbay'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWAFT - Workbay', 'x': 2611, 'y': 699}}]}",0.0,0.0,['UWAFT - Workbay'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -7811,7 +7811,7 @@ A waypoint called E7 Entrance exists at X-Coordinate, 1821, and Y-Coordinate, 50
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Wash Bay', 'x': 2683, 'y': 933}}]}",0.0,0.0,['Wash Bay'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Wash Bay', 'x': 2683, 'y': 933}}]}",0.0,0.0,['Wash Bay'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -8032,7 +8032,7 @@ A waypoint called E7 Entrance exists at X-Coordinate, 1821, and Y-Coordinate, 50
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Open Area', 'x': 1541, 'y': 901}}]}",0.0,0.0,['Open Area'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Open Area', 'x': 1541, 'y': 901}}]}",0.0,0.0,['Open Area'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -8253,7 +8253,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWAFT - Office', 'x': 1035, 'y': 693}}]}",0.0,0.0,['UWAFT - Office'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWAFT - Office', 'x': 1035, 'y': 693}}]}",0.0,0.0,['UWAFT - Office'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -8474,7 +8474,7 @@ A waypoint called Men's Washroom exists at X-Coordinate, 2045, and Y-Coordinate,
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}]}",0.0,0.0,['Baja'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}]}",0.0,0.0,['Baja'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -8691,7 +8691,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[('speak', 'Electrium Mobility')]",Action,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[('speak', 'Electrium Mobility')]",Action,"Expected speak message: ('speak', 'Electrium Mobility') does not match with the generated speak message: This waypoint does not exist or Expected action: speak does not match with the generated action: speak",
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -8908,7 +8908,7 @@ A waypoint called UWAFT - Workbay exists at X-Coordinate, 2611, and Y-Coordinate
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[],,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[],,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -9125,7 +9125,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[['UWFE - Mech Bay','UWFE - Electrical Bay']]",Nav,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[['UWFE - Mech Bay','UWFE - Electrical Bay']]",Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -9346,7 +9346,7 @@ A waypoint called Men's Washroom exists at X-Coordinate, 2045, and Y-Coordinate,
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Electrical Bay', 'x': 1293, 'y': 827}}]}",0.0,0.0,"[['UWFE - Mech Bay','UWFE - Electrical Bay']]",Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Electrical Bay', 'x': 1293, 'y': 827}}]}",0.0,0.0,"[['UWFE - Mech Bay','UWFE - Electrical Bay']]",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -9563,7 +9563,7 @@ A waypoint called UWAFT - Workbay exists at X-Coordinate, 2611, and Y-Coordinate
       ""input"": ""The Machine Shop Instructor Room is located at coordinates X-2257, Y-355.""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'The Machine Shop Instructor Room is located at coordinates X-2257, Y-355.'}]}",0.0,0.0,['Machine Shop Instructor Room'],Nav,
+}","{'actions': [{'action': 'speak', 'input': 'The Machine Shop Instructor Room is located at coordinates X-2257, Y-355.'}]}",0.0,0.0,['Machine Shop Instructor Room'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -9788,7 +9788,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       ""input"": 300
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Rocketry', 'x': 1187, 'y': 691}}, {'action': 'wait', 'input': 300}]}",0.0,0.0,"['Rocketry', ('wait', 5, 'minutes')]",Nav + Action,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Rocketry', 'x': 1187, 'y': 691}}, {'action': 'wait', 'input': 300}]}",0.0,0.0,"['Rocketry', ('wait', 5, 'minutes')]",Nav + Action,Expected wait time: 300 does not match with the provided wait time: 5,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -10005,7 +10005,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       ""input"": ""The best team for racing is located at UWFE - Mech Bay.""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'The best team for racing is located at UWFE - Mech Bay.'}]}",0.0,0.0,"[('speak', 'UWFE')]",Action,
+}","{'actions': [{'action': 'speak', 'input': 'The best team for racing is located at UWFE - Mech Bay.'}]}",0.0,0.0,"[('speak', 'UWFE')]",Action,"Expected speak message: ('speak', 'UWFE') does not match with the generated speak message: The best team for racing is located at UWFE - Mech Bay. or Expected action: speak does not match with the generated action: speak",
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -10226,7 +10226,7 @@ A waypoint called UWAFT - Workbay exists at X-Coordinate, 2611, and Y-Coordinate
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Anechoic Chamber', 'x': 797, 'y': 431}}]}",0.0,0.0,['Anechoic Chamber'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Anechoic Chamber', 'x': 797, 'y': 431}}]}",0.0,0.0,['Anechoic Chamber'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -10451,7 +10451,7 @@ A waypoint called UWAFT - Workbay exists at X-Coordinate, 2611, and Y-Coordinate
       ""input"": ""Please clean up.""
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Open Area', 'x': 1541, 'y': 901}}, {'action': 'speak', 'input': 'Please clean up.'}]}",0.0,0.0,"['Open Area', ('speak', 'Clean up')]",Nav + Action,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Open Area', 'x': 1541, 'y': 901}}, {'action': 'speak', 'input': 'Please clean up.'}]}",0.0,0.0,"['Open Area', ('speak', 'Clean up')]",Nav + Action,"Expected speak message: ('speak', 'Clean up') does not match with the generated speak message: Please clean up. or Expected action: speak does not match with the generated action: speak",
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -10668,7 +10668,7 @@ A waypoint called E7 Entrance exists at X-Coordinate, 1821, and Y-Coordinate, 50
       ""input"": ""The Machine Shop Entrance is located at the coordinates (2261, 883).""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'The Machine Shop Entrance is located at the coordinates (2261, 883).'}]}",0.0,0.0,['Machine Shop Entrance'],Nav,
+}","{'actions': [{'action': 'speak', 'input': 'The Machine Shop Entrance is located at the coordinates (2261, 883).'}]}",0.0,0.0,['Machine Shop Entrance'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -10889,7 +10889,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Concrete Canoe', 'x': 1497, 'y': 691}}]}",0.0,0.0,['Concrete Canoe'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Concrete Canoe', 'x': 1497, 'y': 691}}]}",0.0,0.0,['Concrete Canoe'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -11106,7 +11106,7 @@ A waypoint called Men's Washroom exists at X-Coordinate, 2045, and Y-Coordinate,
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[],,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[],,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -11351,7 +11351,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Mech Bay', 'x': 2593, 'y': 527}}, {'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}, {'action': 'navigate', 'input': {'name': 'Rocketry', 'x': 1187, 'y': 691}}, {'action': 'navigate', 'input': {'name': 'Midnight Sun', 'x': 1735, 'y': 727}}]}",0.0,0.0,"['UWFE - Electrical Bay', 'UWFE - Mech Bay', 'Baja', 'Rocketry', 'Midnight Sun']",Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Mech Bay', 'x': 2593, 'y': 527}}, {'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}, {'action': 'navigate', 'input': {'name': 'Rocketry', 'x': 1187, 'y': 691}}, {'action': 'navigate', 'input': {'name': 'Midnight Sun', 'x': 1735, 'y': 727}}]}",0.0,0.0,"['UWFE - Electrical Bay', 'UWFE - Mech Bay', 'Baja', 'Rocketry', 'Midnight Sun']",Nav,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -11576,7 +11576,7 @@ A waypoint called UWAFT - Workbay exists at X-Coordinate, 2611, and Y-Coordinate
       ""input"": ""Please clean up.""
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Paint Room', 'x': 937, 'y': 637}}, {'action': 'speak', 'input': 'Please clean up.'}]}",0.0,0.0,"['Paint Room', ('speak', 'Clean up')]",Nav + Action,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Paint Room', 'x': 937, 'y': 637}}, {'action': 'speak', 'input': 'Please clean up.'}]}",0.0,0.0,"['Paint Room', ('speak', 'Clean up')]",Nav + Action,"Expected speak message: ('speak', 'Clean up') does not match with the generated speak message: Please clean up. or Expected action: speak does not match with the generated action: speak",
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -11797,7 +11797,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Electrical Bay', 'x': 1293, 'y': 827}}]}",0.0,0.0,['UWFE - Electrical Bay'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Electrical Bay', 'x': 1293, 'y': 827}}]}",0.0,0.0,['UWFE - Electrical Bay'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -12022,7 +12022,7 @@ A waypoint called UWAFT - Workbay exists at X-Coordinate, 2611, and Y-Coordinate
       ""input"": ""Elevators""
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Elevators', 'x': 2017, 'y': 563}}, {'action': 'speak', 'input': 'Elevators'}]}",0.0,0.0,[],,Expected location name: Elevators does not match with the provided location name: [
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Elevators', 'x': 2017, 'y': 563}}, {'action': 'speak', 'input': 'Elevators'}]}",0.0,0.0,[],,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -12251,7 +12251,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Electrical Bay', 'x': 1293, 'y': 827}}, {'action': 'navigate', 'input': {'name': 'WARG', 'x': 1337, 'y': 695}}]}",0.0,0.0,['WARG'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Electrical Bay', 'x': 1293, 'y': 827}}, {'action': 'navigate', 'input': {'name': 'WARG', 'x': 1337, 'y': 695}}]}",0.0,0.0,['WARG'],Nav,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -12472,7 +12472,7 @@ A waypoint called UWAFT - Workbay exists at X-Coordinate, 2611, and Y-Coordinate
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': ""Women's Washroom"", 'x': 2045, 'y': 709}}]}",0.0,0.0,"[['Men's Washroom','Women's Washroom']]",Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': ""Women's Washroom"", 'x': 2045, 'y': 709}}]}",0.0,0.0,"[['Men's Washroom','Women's Washroom']]",Nav,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -12689,7 +12689,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[('speak', 'Baja')]",Action,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[('speak', 'Baja')]",Action,"Expected speak message: ('speak', 'Baja') does not match with the generated speak message: This waypoint does not exist or Expected action: speak does not match with the generated action: speak",
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -12946,7 +12946,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Mech Bay', 'x': 2593, 'y': 527}}, {'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}, {'action': 'navigate', 'input': {'name': 'Rocketry', 'x': 1187, 'y': 691}}, {'action': 'navigate', 'input': {'name': 'Midnight Sun', 'x': 1735, 'y': 727}}, {'action': 'wait', 'input': 300}, {'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}]}",0.0,0.0,"['UWFE - Electrical Bay', 'UWFE - Mech Bay', 'Baja', 'Rocketry', 'Midnight Sun', ('wait, 5, 'minutes'), 'Baja']",Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Mech Bay', 'x': 2593, 'y': 527}}, {'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}, {'action': 'navigate', 'input': {'name': 'Rocketry', 'x': 1187, 'y': 691}}, {'action': 'navigate', 'input': {'name': 'Midnight Sun', 'x': 1735, 'y': 727}}, {'action': 'wait', 'input': 300}, {'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}]}",0.0,0.0,"['UWFE - Electrical Bay', 'UWFE - Mech Bay', 'Baja', 'Rocketry', 'Midnight Sun', ('wait, 5, 'minutes'), 'Baja']",Nav,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -13167,7 +13167,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Mech Bay', 'x': 2593, 'y': 527}}]}",0.0,0.0,['UWFE - Mech Bay'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Mech Bay', 'x': 2593, 'y': 527}}]}",0.0,0.0,['UWFE - Mech Bay'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -13390,7 +13390,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
     }
   ]
 }
-```","{'actions': [{'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}]}",0.0,0.0,"[['UWFE - Mech Bay','UWFE - Electrical Bay','UWAFT - Workbay','UWAFT - Office','Baja','Midnight Sun']]",Nav,
+```","{'actions': [{'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}]}",0.0,0.0,"[['UWFE - Mech Bay','UWFE - Electrical Bay','UWAFT - Workbay','UWAFT - Office','Baja','Midnight Sun']]",Nav,Expected Response Error: Expected Response Type is not 'Nav' for action object 0,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -13611,7 +13611,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Electrical Bay', 'x': 1293, 'y': 827}}]}",0.0,0.0,['Waterloop'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Electrical Bay', 'x': 1293, 'y': 827}}]}",0.0,0.0,['Waterloop'],Nav,Expected location name: UWFE - Electrical Bay does not match with the provided location name: Waterloop,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -13828,7 +13828,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[('speak', 'Electrium Mobility')]",Action,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[('speak', 'Electrium Mobility')]",Action,"Expected speak message: ('speak', 'Electrium Mobility') does not match with the generated speak message: This waypoint does not exist or Expected action: speak does not match with the generated action: speak",
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -14049,7 +14049,7 @@ A waypoint called E7 Entrance exists at X-Coordinate, 1821, and Y-Coordinate, 50
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Open Area', 'x': 1541, 'y': 901}}]}",0.0,0.0,['Open Area'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Open Area', 'x': 1541, 'y': 901}}]}",0.0,0.0,['Open Area'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -14270,7 +14270,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Mech Bay', 'x': 2593, 'y': 527}}]}",0.0,0.0,['UWFE - Mech Bay'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'UWFE - Mech Bay', 'x': 2593, 'y': 527}}]}",0.0,0.0,['UWFE - Mech Bay'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -14487,7 +14487,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       ""input"": ""This waypoint does not exist""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[('speak', 'WhatDig')]",Action,
+}","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,"[('speak', 'WhatDig')]",Action,"Expected speak message: ('speak', 'WhatDig') does not match with the generated speak message: This waypoint does not exist or Expected action: speak does not match with the generated action: speak",
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -14708,7 +14708,7 @@ A waypoint called UWAFT - Workbay exists at X-Coordinate, 2611, and Y-Coordinate
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': ""Men's Washroom"", 'x': 2045, 'y': 709}}]}",0.0,0.0,"[['Men's Washroom','Women's Washroom']]",Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': ""Men's Washroom"", 'x': 2045, 'y': 709}}]}",0.0,0.0,"[['Men's Washroom','Women's Washroom']]",Nav,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -14929,7 +14929,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Concrete Tobbagan', 'x': 1497, 'y': 691}}]}",0.0,0.0,['Concrete Tobbagan'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Concrete Tobbagan', 'x': 1497, 'y': 691}}]}",0.0,0.0,['Concrete Tobbagan'],Nav,,All locations are present in the response
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -15150,7 +15150,7 @@ A waypoint called Women's Washroom exists at X-Coordinate, 2045, and Y-Coordinat
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}]}",0.0,0.0,[],,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Baja', 'x': 1141, 'y': 827}}]}",0.0,0.0,[],,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -15369,7 +15369,7 @@ A waypoint called UWAFT - Workbay exists at X-Coordinate, 2611, and Y-Coordinate
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[],,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,[],,,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -15586,7 +15586,7 @@ A waypoint called E7 South Entrance exists at X-Coordinate, 2597, and Y-Coordina
       ""input"": ""The Welding Room is located at coordinates X: 2413, Y: 423.""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'The Welding Room is located at coordinates X: 2413, Y: 423.'}]}",0.0,0.0,['Welding Room'],Nav,
+}","{'actions': [{'action': 'speak', 'input': 'The Welding Room is located at coordinates X: 2413, Y: 423.'}]}",0.0,0.0,['Welding Room'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0,
 "# Role
 You control a robot that navigates through a building using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests and output valid JSON instructions that the robot will follow.
 
@@ -15807,4 +15807,4 @@ A waypoint called Men's Washroom exists at X-Coordinate, 2045, and Y-Coordinate,
       }
     }
   ]
-}","{'actions': [{'action': 'navigate', 'input': {'name': 'Robotics', 'x': 1645, 'y': 693}}]}",0.0,0.0,['Robotics'],Nav,
+}","{'actions': [{'action': 'navigate', 'input': {'name': 'Robotics', 'x': 1645, 'y': 693}}]}",0.0,0.0,['Robotics'],Nav,,All locations are present in the response

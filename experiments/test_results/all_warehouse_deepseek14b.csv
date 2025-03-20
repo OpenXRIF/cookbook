@@ -536,7 +536,7 @@ To find M6 by 1.0 dash 55mm bolts:
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'The M6 by 1.0 dash 55mm bolts are located in container A-06-001 at coordinates (1990, 200).'}]}",0.0,0.0,['A-12-009'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'The M6 by 1.0 dash 55mm bolts are located in container A-06-001 at coordinates (1990, 200).'}]}",0.0,0.0,['A-12-009'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0
 "Role: You control a robot that navigates through a warehouse using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests—taking into account potential typos or misnamed parts—and output valid JSON instructions that the robot will follow.
 
 # JSON Output Format
@@ -801,7 +801,7 @@ I also need to ensure that I'm following all the guidelines, like processing com
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': ""Invalid request: 'impact' does not exist in available containers""}]}",0.0,0.0,['B-04-075'],Nav,
+```","{'actions': [{'action': 'speak', 'input': ""Invalid request: 'impact' does not exist in available containers""}]}",0.0,0.0,['B-04-075'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0
 "Role: You control a robot that navigates through a warehouse using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests—taking into account potential typos or misnamed parts—and output valid JSON instructions that the robot will follow.
 
 # JSON Output Format
@@ -1090,7 +1090,7 @@ To respond to the user's query about finding M6-1.0x55mm bolts, we first identif
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'The M6-1.0x55mm bolts are in container A-05-199 at coordinates (1670, 199).'}]}",0.0,0.0,['A-12-009'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'The M6-1.0x55mm bolts are in container A-05-199 at coordinates (1670, 199).'}]}",0.0,0.0,['A-12-009'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0
 "Role: You control a robot that navigates through a warehouse using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests—taking into account potential typos or misnamed parts—and output valid JSON instructions that the robot will follow.
 
 # JSON Output Format
@@ -1968,7 +1968,7 @@ Also, the user didn't mention any section, just the part number. Without a match
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['B-08-199'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['B-08-199'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0
 "Role: You control a robot that navigates through a warehouse using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests—taking into account potential typos or misnamed parts—and output valid JSON instructions that the robot will follow.
 
 # JSON Output Format
@@ -3594,7 +3594,7 @@ Given that none of the waypoints contain information related to Red Bull or beve
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}, {'action': 'navigate', 'input': {'name': 'Starting Point', 'x': 0, 'y': 0}}]}",0.0,0.0,[],Nav,Expected Response Error: Expected Response Type is not correct for action object 0
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}, {'action': 'navigate', 'input': {'name': 'Starting Point', 'x': 0, 'y': 0}}]}",0.0,0.0,[],Nav,
 "Role: You control a robot that navigates through a warehouse using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests—taking into account potential typos or misnamed parts—and output valid JSON instructions that the robot will follow.
 
 # JSON Output Format
@@ -4118,7 +4118,7 @@ Therefore, the response should be an error indicating that the waypoint doesn't 
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['B-08-199'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['B-08-199'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0
 "Role: You control a robot that navigates through a warehouse using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests—taking into account potential typos or misnamed parts—and output valid JSON instructions that the robot will follow.
 
 # JSON Output Format
@@ -4720,7 +4720,7 @@ So the response should be a speak action indicating that the container for M6-55
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'The container for the M6-1.0x55mm bolts is A-03-003.'}]}",0.0,0.0,['A-12-009'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'The container for the M6-1.0x55mm bolts is A-03-003.'}]}",0.0,0.0,['A-12-009'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0
 "Role: You control a robot that navigates through a warehouse using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests—taking into account potential typos or misnamed parts—and output valid JSON instructions that the robot will follow.
 
 # JSON Output Format
@@ -6123,7 +6123,7 @@ The request asks for ""55 millimeter M6 bolts."" Looking at the available contai
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['A-12-009'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['A-12-009'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0
 "Role: You control a robot that navigates through a warehouse using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests—taking into account potential typos or misnamed parts—and output valid JSON instructions that the robot will follow.
 
 # JSON Output Format
@@ -6406,7 +6406,7 @@ The 55mm M6 bolts are located in container A1-003 at coordinates (2080, 300).
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'The container for the 55 millimeter M6 bolts is A1-003 at coordinates x=2080, y=300.'}]}",0.0,0.0,['A-12-009'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'The container for the 55 millimeter M6 bolts is A1-003 at coordinates x=2080, y=300.'}]}",0.0,0.0,['A-12-009'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0
 "Role: You control a robot that navigates through a warehouse using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests—taking into account potential typos or misnamed parts—and output valid JSON instructions that the robot will follow.
 
 # JSON Output Format
@@ -6960,7 +6960,7 @@ The user is asking about the location of M6 by 55mm bolts. Based on the provided
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'The container for the M6 by 55mm bolts is A-01-001.'}]}",0.0,0.0,['A-12-009'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'The container for the M6 by 55mm bolts is A-01-001.'}]}",0.0,0.0,['A-12-009'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0
 "Role: You control a robot that navigates through a warehouse using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests—taking into account potential typos or misnamed parts—and output valid JSON instructions that the robot will follow.
 
 # JSON Output Format
@@ -7229,7 +7229,7 @@ The user is asking to be taken to a Dewalt power drill. Checking the provided wa
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['B-07-079'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['B-07-079'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0
 "Role: You control a robot that navigates through a warehouse using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests—taking into account potential typos or misnamed parts—and output valid JSON instructions that the robot will follow.
 
 # JSON Output Format
@@ -7767,7 +7767,7 @@ Therefore, after reviewing all possibilities and ensuring there's no match, I co
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['F-11-138'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['F-11-138'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0
 "Role: You control a robot that navigates through a warehouse using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests—taking into account potential typos or misnamed parts—and output valid JSON instructions that the robot will follow.
 
 # JSON Output Format
@@ -9205,7 +9205,7 @@ I also need to structure the response correctly, using a speak action to inform 
       ""input"": ""I did not find any M6 washers in the containers.""
     }
   ]
-}","{'actions': [{'action': 'speak', 'input': 'Request canceled: I will not get you some M6 washers.'}, {'action': 'speak', 'input': 'I did not find any M6 washers in the containers.'}]}",0.0,0.0,[],,Expected Response Error: Expected Response Type is not correct for action object 0
+}","{'actions': [{'action': 'speak', 'input': 'Request canceled: I will not get you some M6 washers.'}, {'action': 'speak', 'input': 'I did not find any M6 washers in the containers.'}]}",0.0,0.0,[],,
 "Role: You control a robot that navigates through a warehouse using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests—taking into account potential typos or misnamed parts—and output valid JSON instructions that the robot will follow.
 
 # JSON Output Format
@@ -10138,7 +10138,7 @@ The requested item ""M8 washers"" is not found in any available waypoints, so th
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['A-05-113'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['A-05-113'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0
 "Role: You control a robot that navigates through a warehouse using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests—taking into account potential typos or misnamed parts—and output valid JSON instructions that the robot will follow.
 
 # JSON Output Format
@@ -11273,7 +11273,7 @@ The user has asked for ""part number B 08 199,"" which does not correspond to an
     }
   ]
 }
-```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['B-08-199'],Nav,
+```","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['B-08-199'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0
 "Role: You control a robot that navigates through a warehouse using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests—taking into account potential typos or misnamed parts—and output valid JSON instructions that the robot will follow.
 
 # JSON Output Format
@@ -11848,7 +11848,7 @@ The user is asking for a part number that isn't available in our system. Here's 
 ```
 
 **Explanation:**
-The user requested part number B-08-199, which doesn't match any available waypoints. Our system checks against the provided codes and finds no match, so we respond with an error message.","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['B-08-199'],Nav,
+The user requested part number B-08-199, which doesn't match any available waypoints. Our system checks against the provided codes and finds no match, so we respond with an error message.","{'actions': [{'action': 'speak', 'input': 'This waypoint does not exist'}]}",0.0,0.0,['B-08-199'],Nav,Expected Response Error: Expected Response Type is not correct for action object 0
 "Role: You control a robot that navigates through a warehouse using a JSON instruction format. You have access to several pre-defined waypoints and functions. Your goal is to interpret the user's natural language requests—taking into account potential typos or misnamed parts—and output valid JSON instructions that the robot will follow.
 
 # JSON Output Format
