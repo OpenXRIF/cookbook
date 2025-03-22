@@ -31,5 +31,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['C&D - Snack Area', 'C&D - Cold Drink Area']",
     "Expected Response Type": "Nav",
-    "Error Message": ""
+    "Error Message": "Expected location name: Room 257 - C&D - Cold Drink Aeria does not match with the provided location name: C&D - Cold Drink Area"
 }

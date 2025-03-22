@@ -31,5 +31,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['Novelties', 'South Entrance']",
     "Expected Response Type": "Nav",
-    "Error Message": ""
+    "Error Message": "Expected location name: Novelties Store does not match with the provided location name: Novelties"
 }

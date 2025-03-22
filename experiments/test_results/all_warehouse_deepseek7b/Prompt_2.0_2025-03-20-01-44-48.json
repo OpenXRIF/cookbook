@@ -27,5 +27,5 @@
     "Starting Y": 500.0,
     "Expected Response": "['B-08-199', 'Start Point']",
     "Expected Response Type": "Nav",
-    "Error Message": ""
+    "Error Message": "Expected Response Error: Expected Response Type is not correct for action object 0"
 }

@@ -19,5 +19,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['Speak']",
     "Expected Response Type": "Nav + Action",
-    "Error Message": ""
+    "Error Message": "Expected Response Error: Expected Response Type is not correct for action object 0"
 }

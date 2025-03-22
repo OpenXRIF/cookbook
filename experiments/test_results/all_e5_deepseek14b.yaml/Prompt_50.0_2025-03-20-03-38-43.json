@@ -27,5 +27,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['Paint Room', ('speak', 'Clean up')]",
     "Expected Response Type": "Nav + Action",
-    "Error Message": ""
+    "Error Message": "Expected location name: Paint Booth does not match with the provided location name: Paint Room"
 }

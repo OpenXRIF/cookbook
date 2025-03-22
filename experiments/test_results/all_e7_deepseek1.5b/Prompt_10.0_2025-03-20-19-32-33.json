@@ -31,5 +31,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['Microwaves', 'E5 Entrance']",
     "Expected Response Type": "Nav",
-    "Error Message": ""
+    "Error Message": "Expected location name: Micwafes Entrance does not match with the provided location name: Microwaves"
 }

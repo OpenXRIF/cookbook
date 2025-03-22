@@ -23,5 +23,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['Robotics']",
     "Expected Response Type": "Nav",
-    "Error Message": ""
+    "Error Message": "Expected location name: Mars Rover Lab does not match with the provided location name: Robotics"
 }

@@ -17,5 +17,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['F-11-138', 'Speak']",
     "Expected Response Type": "Nav + Action",
-    "Error Message": ""
+    "Error Message": "Response Error Missing field: 'action' in action object 0"
 }

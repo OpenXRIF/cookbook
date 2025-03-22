@@ -30,5 +30,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['C&D - Hot Food Area', ('speak', 'C&D Hot Food Area'), ('wait', 'until further instructions')]",
     "Expected Response Type": "Nav + Action",
-    "Error Message": ""
+    "Error Message": "Response Error Missing field: 'input' in action object 2"
 }

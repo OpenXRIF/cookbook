@@ -23,5 +23,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['RoboHub']",
     "Expected Response Type": "Nav",
-    "Error Message": ""
+    "Error Message": "Expected location name: C&D Street 1427 - RoboHub does not match with the provided location name: RoboHub"
 }

@@ -31,5 +31,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['North Entrance', 'RoboHub']",
     "Expected Response Type": "Nav",
-    "Error Message": ""
+    "Error Message": "Expected location name: E5 Entrance does not match with the provided location name: North Entrance"
 }

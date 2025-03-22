@@ -31,5 +31,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['F-11-138', 'Speak']",
     "Expected Response Type": "Nav + Action",
-    "Error Message": ""
+    "Error Message": "Expected location name: A-01-001 does not match with the provided location name: F-11-138"
 }

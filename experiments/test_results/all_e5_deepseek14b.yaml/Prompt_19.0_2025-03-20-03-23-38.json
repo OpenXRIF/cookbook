@@ -19,5 +19,5 @@
     "Starting Y": 0.0,
     "Expected Response": "[('speak', 'Electrium Mobility')]",
     "Expected Response Type": "Action",
-    "Error Message": ""
+    "Error Message": "Expected speak message: ('speak', 'Electrium Mobility') does not match with the generated speak message: You might want to join the 'Design Team'. It is a great team for students interested in innovative design projects. or Expected action: speak does not match with the generated action: speak"
 }

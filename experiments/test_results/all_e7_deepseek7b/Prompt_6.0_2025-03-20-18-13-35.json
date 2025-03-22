@@ -31,5 +31,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['Shower A', 'Shower B']",
     "Expected Response Type": "Nav",
-    "Error Message": ""
+    "Error Message": "Expected location name: Shower A - Room 1427 does not match with the provided location name: Shower A"
 }

@@ -31,5 +31,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['E5 Entrance', 'Microwaves']",
     "Expected Response Type": "Nav",
-    "Error Message": ""
+    "Error Message": "Expected location name: C&D - Coffee Area does not match with the provided location name: Microwaves"
 }

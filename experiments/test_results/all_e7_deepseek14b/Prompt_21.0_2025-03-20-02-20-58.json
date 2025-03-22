@@ -27,5 +27,5 @@
     "Starting Y": 0.0,
     "Expected Response": "['Novelties', 'South Entrance']",
     "Expected Response Type": "Nav",
-    "Error Message": ""
+    "Error Message": "Expected Response Error: Expected Response Type is not correct for action object 1"
 }

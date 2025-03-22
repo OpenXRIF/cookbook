@@ -27,5 +27,5 @@
     "Starting Y": 0.0,
     "Expected Response": "[]",
     "Expected Response Type": "Nav",
-    "Error Message": "Expected location name: C-05-012 does not match with the provided location name: ["
+    "Error Message": ""
 }

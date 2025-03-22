@@ -27,5 +27,5 @@
     "Starting Y": 0.0,
     "Expected Response": "[]",
     "Expected Response Type": "Nav",
-    "Error Message": "Expected Response Error: Expected Response Type is not correct for action object 0"
+    "Error Message": ""
 }

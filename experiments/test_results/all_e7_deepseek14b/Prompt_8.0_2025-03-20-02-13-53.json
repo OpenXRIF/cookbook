@@ -31,5 +31,6 @@
     "Starting Y": 0.0,
     "Expected Response": "['C&D - Snack Area', 'C&D - Cold Drink Area']",
     "Expected Response Type": "Nav",
-    "Error Message": ""
+    "Error Message": "",
+    "Notes": "All locations are present in the response"
 }

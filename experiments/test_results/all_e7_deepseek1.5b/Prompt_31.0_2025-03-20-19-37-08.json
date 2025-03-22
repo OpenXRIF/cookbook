@@ -27,5 +27,5 @@
     "Starting Y": NaN,
     "Expected Response": "[]",
     "Expected Response Type": "Nav",
-    "Error Message": "Expected location name: C&D - Coffee Area does not match with the provided location name: ["
+    "Error Message": ""
 }
