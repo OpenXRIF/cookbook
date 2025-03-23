@@ -23,7 +23,7 @@ seaborn = "^0.13.2"
 papermill = "^2.6.0"
 python-dotenv = "^1.0.1"
 weave = "^0.51.36"
-openai = "^1.59.2"
+openai = "^1.68.2"
 
 
 
