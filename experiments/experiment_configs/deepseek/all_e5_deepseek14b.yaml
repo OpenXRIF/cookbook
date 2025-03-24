@@ -10,5 +10,5 @@ chat_kwargs:
    num_predict : 500
    temperature : 0.2
    top_p : 0.2
-output_folder: "all_e5_deepseek14b.yaml"
+output_folder: "all_e5_deepseek14b"
 test_dataset: "test_datasets/E5_Test_Cases.csv"
