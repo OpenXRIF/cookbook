@@ -8,7 +8,7 @@ embed_model: "deepseek-r1:14b"
 fetch_all: True
 chat_kwargs: 
    num_predict : 500
-   temperature : 0.2
-   top_p : 0.2
+   temperature : 0.5
+   top_p : 0.5
 output_folder: "all_e7_deepseek14b"
 test_dataset: "test_datasets/E7_Test_Cases.csv"
