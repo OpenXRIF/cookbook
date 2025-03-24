@@ -1,0 +1,14 @@
+---
+prompt_template: "prompts/e7_xrif_actions_6.yaml"
+waypoints_csv: "waypoint_datasets/uw_e5_floor1.csv"
+language_model_type: "Ollama"
+embed_model_type: "Ollama"
+language_model: "deepseek-r1:1.5b"
+embed_model: "deepseek-r1:1.5b"
+fetch_all: True
+chat_kwargs: 
+   num_predict : 500
+   temperature : 0.5
+   top_p : 0.5
+output_folder: "all_e5_deepseek1.5b"
+test_dataset: "test_datasets/E5_Test_Cases.csv"
