@@ -16,7 +16,7 @@ transformers = "<=4.49.0"
 wandb = "^0.19.4"
 cohere = "^5.14.0"
 onnx = "^1.17.0"
-onnxruntime = "^1.20.1"
+onnxruntime = "^1.21.0"
 ray = {extras = ["data", "train", "tune"], version = "^2.40.0"}
 horovod = "^0.28.1"
 seaborn = "^0.13.2"
