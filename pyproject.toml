@@ -21,7 +21,7 @@ ray = {extras = ["data", "train", "tune"], version = "^2.40.0"}
 horovod = "^0.28.1"
 seaborn = "^0.13.2"
 papermill = "^2.6.0"
-python-dotenv = "^1.0.1"
+python-dotenv = "^1.1.0"
 weave = "^0.51.36"
 openai = "^1.68.2"
 
