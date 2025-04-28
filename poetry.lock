@@ -2091,7 +2091,7 @@ version = "1.6.0"
 description = "Patch asyncio to allow nested event loops"
 optional = false
 python-versions = ">=3.5"
-groups = ["dev"]
+groups = ["main", "dev"]
 files = [
     {file = "nest_asyncio-1.6.0-py3-none-any.whl", hash = "sha256:87af6efd6b5e897c81050477ef65c62e2b2f35d51703cae01aff2905b1852e1c"},
     {file = "nest_asyncio-1.6.0.tar.gz", hash = "sha256:6f172d5449aca15afd6c646851f4e31e02c598d553a667e38cafa997cfec55fe"},
@@ -4576,14 +4576,14 @@ files = [
 
 [[package]]
 name = "weave"
-version = "0.51.36"
+version = "0.51.44"
 description = "A toolkit for building composable interactive data driven applications."
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "weave-0.51.36-py3-none-any.whl", hash = "sha256:e619a9c1059b49808e160613573c460184bab8b611d390279f5de6649b4428de"},
-    {file = "weave-0.51.36.tar.gz", hash = "sha256:a4cac959d24b3b2d68b3ef5ffe9720d48bef1567d5267e075c618ccf3fe1c77f"},
+    {file = "weave-0.51.44-py3-none-any.whl", hash = "sha256:0b88ef54adc71b64e0aeb8a506ded424cba564eaa1cd5888fc1201e65b53ea6e"},
+    {file = "weave-0.51.44.tar.gz", hash = "sha256:6948e1410a52ea3c88e05c12bc177b620152d562672492637fa29304816a59c1"},
 ]
 
 [package.dependencies]
@@ -4591,6 +4591,7 @@ diskcache = "5.6.3"
 emoji = ">=2.12.1"
 gql = {version = "*", extras = ["aiohttp", "requests"]}
 jsonschema = ">=4.23.0"
+nest-asyncio = "1.6.0"
 numpy = ">1.21.0"
 packaging = ">=21.0"
 pydantic = ">=2.0.0"
@@ -4604,26 +4605,31 @@ anthropic = ["anthropic (>=0.18.0)"]
 bedrock = ["boto3", "moto[bedrock] (>=5.0.24)"]
 cerebras = ["cerebras-cloud-sdk"]
 cohere = ["cohere (>=5.9.1,<5.9.3)"]
-docs = ["lazydocs", "nbconvert", "nbformat", "playwright"]
-dspy = ["dspy (>=0.1.5)", "litellm (<=1.49.1)"]
+crewai = ["crewai (>=0.100.1,<=0.108.0)", "crewai-tools (>=0.38.0)"]
+dev = ["python-multipart", "tomlkit"]
+docs = ["azure-storage-blob (>=12.24.0)", "boto3 (>=1.34.0)", "ddtrace (>=2.7.0)", "google-cloud-storage (>=2.7.0)", "lazydocs", "litellm (>=1.36.1)", "nbconvert", "nbformat", "openinference-semantic-conventions (>=0.1.17)", "opentelemetry-proto (>=1.12.0)", "opentelemetry-semantic-conventions-ai (>=0.4.3)", "playwright"]
+dspy = ["dspy (>=2.6.3)", "litellm (<=1.61.6)"]
 google-ai-studio = ["google-generativeai (>=0.8.3)"]
+google-genai = ["google-genai (>=1.0.0)", "pillow (>=11.1.0)"]
 groq = ["groq (>=0.13.0)"]
 huggingface = ["huggingface-hub (>=0.28.1)"]
-instructor = ["instructor (>=1.4.3) ; python_version > \"3.9\"", "instructor (>=1.4.3,<1.7.0) ; python_version <= \"3.9\""]
+instructor = ["google-genai (>=1.5.0)", "instructor (>=1.4.3) ; python_version > \"3.9\"", "instructor (>=1.4.3,<1.7.0) ; python_version <= \"3.9\""]
 langchain = ["chromadb (>=0.5.0)", "langchain-community (>=0.2.1)", "langchain-core (>=0.2.1)", "langchain-openai (>=0.1.7)", "opentelemetry-exporter-otlp", "pysqlite3"]
 langchain-nvidia-ai-endpoints = ["langchain-core (>=0.2.1)", "langchain-nvidia-ai-endpoints"]
 litellm = ["litellm (>=1.36.1)"]
 llamaindex = ["llama-index (>=0.10.35,<0.12.0)"]
+mcp = ["mcp[cli] (>=1.6.0)"]
 mistral0 = ["mistralai (>=0.1.8,<1.0.0)"]
 mistral1 = ["mistralai (>=1.0.0)"]
 modal = ["modal", "python-dotenv"]
 notdiamond = ["litellm (<=1.49.1)", "notdiamond (>=0.3.21)"]
 openai = ["openai (>=1.0.0)"]
+openai-agents = ["openai-agents (>=0.0.4)"]
 pandas-test = ["pandas (>=2.2.3)"]
 presidio = ["presidio-analyzer (==2.2.357)", "presidio-anonymizer (==2.2.357)"]
-scorers = ["levenshtein (>=0.26.0)", "litellm (>=1.58)", "pip (>=20.0)", "presidio-analyzer (>=2.2.0)", "presidio-anonymizer (>=2.2.0)", "scikit-learn (>=1.5.2)", "sentence-transformers (>=3.3.1)", "sentencepiece (>=0.2.0)", "torch (>=2.4.1)", "transformers (>=4.48.2)"]
-test = ["azure-storage-blob (>=12.24.0)", "boto3 (>=1.34.0)", "clickhouse-connect (==0.7.0)", "ddtrace (>=2.7.0)", "fastapi (>=0.110.0)", "filelock", "flask", "google-cloud-storage (>=2.7.0)", "httpx", "moto[s3] (>=5.0.0)", "nox", "pillow", "pytest (>=8.2.0)", "pytest-asyncio (>=0.23.6)", "pytest-cov (>=5.0.0)", "pytest-recording (>=0.13.2)", "pytest-rerunfailures (>=12.0)", "pytest-rerunfailures (>=14.0)", "pytest-xdist (>=3.1.0)", "sqlparse (==0.5.0)", "uvicorn (>=0.27.0)", "vcrpy (>=7.0.0)"]
-trace-server = ["azure-storage-blob (>=12.24.0)", "boto3 (>=1.34.0)", "ddtrace (>=2.7.0)", "google-cloud-storage (>=2.7.0)"]
+scorers = ["levenshtein (>=0.26.0)", "litellm (>=1.58)", "pip (>=20.0)", "presidio-analyzer (>=2.2.0)", "presidio-anonymizer (>=2.2.0)", "scikit-learn (>=1.5.2)", "sentence-transformers (>=3.3.1)", "sentencepiece (>=0.2.0)", "torch (>=2.4.1)", "transformers (>=4.51.1)"]
+test = ["azure-storage-blob (>=12.24.0)", "boto3 (>=1.34.0)", "clickhouse-connect (==0.7.0)", "ddtrace (>=2.7.0)", "fastapi (>=0.110.0)", "filelock", "flask", "google-cloud-storage (>=2.7.0)", "httpx", "litellm (>=1.36.1)", "moto[s3] (>=5.0.0)", "nox", "openinference-semantic-conventions (>=0.1.17)", "opentelemetry-proto (>=1.12.0)", "opentelemetry-semantic-conventions-ai (>=0.4.3)", "pillow", "pytest (>=8.2.0)", "pytest-asyncio (>=0.23.6)", "pytest-cov (>=5.0.0)", "pytest-recording (>=0.13.2)", "pytest-rerunfailures (>=12.0)", "pytest-rerunfailures (>=14.0)", "pytest-xdist (>=3.1.0)", "sqlparse (==0.5.0)", "uvicorn (>=0.27.0)", "vcrpy (>=7.0.0)"]
+trace-server = ["azure-storage-blob (>=12.24.0)", "boto3 (>=1.34.0)", "ddtrace (>=2.7.0)", "google-cloud-storage (>=2.7.0)", "litellm (>=1.36.1)", "openinference-semantic-conventions (>=0.1.17)", "opentelemetry-proto (>=1.12.0)", "opentelemetry-semantic-conventions-ai (>=0.4.3)"]
 trace-server-tests = ["moto[s3] (>=5.0.0)"]
 vertexai = ["shapely (<=2.0.6)", "vertexai (>=1.70.0)"]
 
@@ -4727,4 +4733,4 @@ propcache = ">=0.2.0"
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "60c92035c739c9f74515e5c6a16d4aae5485885b4d13ca51c1391934b4f28910"
+content-hash = "ebd593e26fec25595ea0a5846d813cc1058697644deeb3eec0750181958a3b29"
