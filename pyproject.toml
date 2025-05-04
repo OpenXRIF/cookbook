@@ -14,7 +14,7 @@ matplotlib = "^3.10.1"
 torch = "^2.5.1"
 transformers = "<=4.51.3"
 wandb = "^0.19.10"
-cohere = "^5.14.0"
+cohere = "^5.15.0"
 onnx = "^1.17.0"
 onnxruntime = "^1.21.1"
 ray = {extras = ["data", "train", "tune"], version = "^2.40.0"}
