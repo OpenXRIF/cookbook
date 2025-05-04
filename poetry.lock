@@ -456,14 +456,14 @@ files = [
 
 [[package]]
 name = "cohere"
-version = "5.14.0"
+version = "5.15.0"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "cohere-5.14.0-py3-none-any.whl", hash = "sha256:286b4ff66f9a59c06a30b8819fb8b2aee3354dc2f7dc83f19519da771e598a5e"},
-    {file = "cohere-5.14.0.tar.gz", hash = "sha256:fdbf2d4c54049b74c8f79ff8ed6fd149c4c2055d3b5eae57b9c70716e65c78fd"},
+    {file = "cohere-5.15.0-py3-none-any.whl", hash = "sha256:22ff867c2a6f2fc2b585360c6072f584f11f275ef6d9242bac24e0fa2df1dfb5"},
+    {file = "cohere-5.15.0.tar.gz", hash = "sha256:e802d4718ddb0bb655654382ebbce002756a3800faac30296cde7f1bdc6ff2cc"},
 ]
 
 [package.dependencies]
@@ -4733,4 +4733,4 @@ propcache = ">=0.2.0"
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "8d79bf958e00103e4cc0f0b7eeaeb90be4dc9997f5c6ad662b6f74858f18b913"
+content-hash = "2f47b7c5a7e65960c4d33fc6b7e3b8c7c20848de47754cc1d127429f1083e117"
