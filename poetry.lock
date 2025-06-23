@@ -689,21 +689,6 @@ files = [
 ]
 
 [[package]]
-name = "docker-pycreds"
-version = "0.4.0"
-description = "Python bindings for the docker credentials store API"
-optional = false
-python-versions = "*"
-groups = ["main"]
-files = [
-    {file = "docker-pycreds-0.4.0.tar.gz", hash = "sha256:6ce3270bcaf404cc4c3e27e4b6c70d3521deae82fb508767870fdbf772d584d4"},
-    {file = "docker_pycreds-0.4.0-py2.py3-none-any.whl", hash = "sha256:7266112468627868005106ec19cd0d722702d2b7d5912a28e19b826c3d37af49"},
-]
-
-[package.dependencies]
-six = ">=1.4.0"
-
-[[package]]
 name = "emoji"
 version = "2.14.0"
 description = "Emoji for Python"
@@ -4515,29 +4500,29 @@ files = [
 
 [[package]]
 name = "wandb"
-version = "0.19.10"
+version = "0.20.1"
 description = "A CLI and library for interacting with the Weights & Biases API."
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "wandb-0.19.10-py3-none-any.whl", hash = "sha256:c0ed28c56005fa899eed2f03db50b3c579682797afd0baf925c73e9e5d38e2f6"},
-    {file = "wandb-0.19.10-py3-none-macosx_10_14_x86_64.whl", hash = "sha256:1dbe1aa6f321a761a6be35f55dedb120c50a37fb807f6cb72714c51a6e987444"},
-    {file = "wandb-0.19.10-py3-none-macosx_11_0_arm64.whl", hash = "sha256:5eeaeabcf6e90cc96292ee47d08b2e180e81a560773e3127bafa8c02c96c0029"},
-    {file = "wandb-0.19.10-py3-none-macosx_11_0_x86_64.whl", hash = "sha256:cb3b88eb69d4e17fd7cdfb89970eff06b7328862ec6dd739ae524b7b17cd8a9f"},
-    {file = "wandb-0.19.10-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:c290791a58a2afdf0ec76d02e9f5d750387d52797bc46b12e889cf9baeec2880"},
-    {file = "wandb-0.19.10-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:1a518b94b0b481230e62c069d341a1c35f5bf0ac0011bc06554b33b213ea6d40"},
-    {file = "wandb-0.19.10-py3-none-musllinux_1_2_aarch64.whl", hash = "sha256:3dfabb4fa64b84663d34fd11c53bd6e4a3a42026e7776519966cd45a4c39f93a"},
-    {file = "wandb-0.19.10-py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:92d6889f6f291f954ac27019ea6c4b5115d1670846f2474c875c98baf93f8f51"},
-    {file = "wandb-0.19.10-py3-none-win32.whl", hash = "sha256:1df6a5ad4f4eea1732453598360e99350b6a14e5d911d305d595bd1c412ff0e8"},
-    {file = "wandb-0.19.10-py3-none-win_amd64.whl", hash = "sha256:ae6b09efaa3c5b70146710fc153889f4faf059ea2e0bd2c1fb821dc59a77f50a"},
-    {file = "wandb-0.19.10.tar.gz", hash = "sha256:010772d26cd259eee2b7e0c8a8d59ad53de050ba96b0bc56e3ee23ff4f1436bb"},
+    {file = "wandb-0.20.1-py3-none-any.whl", hash = "sha256:e6395cabf074247042be1cf0dc6ab0b06aa4c9538c2e1fdc5b507a690ce0cf17"},
+    {file = "wandb-0.20.1-py3-none-macosx_10_14_x86_64.whl", hash = "sha256:2475a48c693adf677d40da9e1c8ceeaf86d745ffc3b7e3535731279d02f9e845"},
+    {file = "wandb-0.20.1-py3-none-macosx_11_0_arm64.whl", hash = "sha256:99cce804c31ec1e0d1e691650a7d51773ed7329c41745d56384fa3655a0e9b2c"},
+    {file = "wandb-0.20.1-py3-none-macosx_11_0_x86_64.whl", hash = "sha256:ce3ee412677a1679e04b21e03a91e1e02eb90faf658d682bee86c33cf5f32e09"},
+    {file = "wandb-0.20.1-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:5e58ca32c7147161158f09b0fb5f5896876f8569d0d10ae7b64d0510c868ce33"},
+    {file = "wandb-0.20.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:591506ecbdd396648cc323ba270f3ab4aed3158e1dbfa7636c09f9f7f0253e1c"},
+    {file = "wandb-0.20.1-py3-none-musllinux_1_2_aarch64.whl", hash = "sha256:382508532db09893f81cc926b1d333caa4c8a7db057878899fadf929bbdb3b56"},
+    {file = "wandb-0.20.1-py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:29ea495e49393db860f17437fe37e48018da90436ce10949b471780f09293bd7"},
+    {file = "wandb-0.20.1-py3-none-win32.whl", hash = "sha256:455ee0a652e59ab1e4b546fa1dc833dd3063aa7e64eb8abf95d22f0e9f08c574"},
+    {file = "wandb-0.20.1-py3-none-win_amd64.whl", hash = "sha256:6d2431652f096b7e394c29a99135a6441c02ed3198b963f0b351a5b5e56aeca0"},
+    {file = "wandb-0.20.1.tar.gz", hash = "sha256:dbd3fc60dfe7bf83c4de24b206b99b44949fef323f817a783883db72fc5f3bfe"},
 ]
 
 [package.dependencies]
 click = ">=7.1,<8.0.0 || >8.0.0"
-docker-pycreds = ">=0.4.0"
 gitpython = ">=1.0.0,<3.1.29 || >3.1.29"
+packaging = "*"
 platformdirs = "*"
 protobuf = {version = ">=3.19.0,<4.21.0 || >4.21.0,<5.28.0 || >5.28.0,<7", markers = "python_version > \"3.9\" or sys_platform != \"linux\""}
 psutil = ">=5.0.0"
@@ -4546,8 +4531,7 @@ pyyaml = "*"
 requests = ">=2.0.0,<3"
 sentry-sdk = ">=2.0.0"
 setproctitle = "*"
-setuptools = "*"
-typing-extensions = ">=4.4,<5"
+typing-extensions = ">=4.8,<5"
 
 [package.extras]
 aws = ["boto3", "botocore (>=1.5.76)"]
@@ -4555,8 +4539,8 @@ azure = ["azure-identity", "azure-storage-blob"]
 gcp = ["google-cloud-storage"]
 importers = ["filelock", "mlflow", "polars (<=1.2.1)", "rich", "tenacity"]
 kubeflow = ["google-cloud-storage", "kubernetes", "minio", "sh"]
-launch = ["awscli", "azure-containerregistry", "azure-identity", "azure-storage-blob", "boto3", "botocore (>=1.5.76)", "chardet", "google-auth", "google-cloud-aiplatform", "google-cloud-artifact-registry", "google-cloud-compute", "google-cloud-storage", "iso8601", "jsonschema", "kubernetes", "kubernetes-asyncio", "nbconvert", "nbformat", "optuna", "pydantic", "pyyaml (>=6.0.0)", "tomli", "typing-extensions"]
-media = ["bokeh", "imageio", "moviepy (>=1.0.0)", "numpy", "pillow", "plotly (>=5.18.0)", "rdkit", "soundfile"]
+launch = ["awscli", "azure-containerregistry", "azure-identity", "azure-storage-blob", "boto3", "botocore (>=1.5.76)", "chardet", "google-auth", "google-cloud-aiplatform", "google-cloud-artifact-registry", "google-cloud-compute", "google-cloud-storage", "iso8601", "jsonschema", "kubernetes", "kubernetes-asyncio", "nbconvert", "nbformat", "optuna", "pydantic", "pyyaml (>=6.0.0)", "tomli", "tornado (>=6.5.0) ; python_version >= \"3.9\"", "typing-extensions"]
+media = ["bokeh", "imageio (>=2.28.1)", "moviepy (>=1.0.0)", "numpy", "pillow", "plotly (>=5.18.0)", "rdkit", "soundfile"]
 models = ["cloudpickle"]
 perf = ["orjson"]
 sweeps = ["sweeps (>=0.2.0)"]
@@ -4733,4 +4717,4 @@ propcache = ">=0.2.0"
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "58f5d0b5080ef2d14fb3992258a5e8e7b46e8dc9067bfc6a17449e4c8b08a343"
+content-hash = "72d52e1c6d025361c9a226e3a811fcc4ef7e90397eea2ad6c73251d73b37a3d2"
